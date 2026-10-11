@@ -76,6 +76,15 @@
     "nate_sleeps"
    ],
    "first_line": "nate was incredible last night lol"
+  },
+  {
+   "key": "seed-s03",
+   "id": "s03",
+   "pov": "Nate",
+   "bits": [
+    "nate_wife"
+   ],
+   "first_line": "let's hang tonight"
   }
  ],
  "callbacks": [],
