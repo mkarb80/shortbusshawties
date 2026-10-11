@@ -95,6 +95,15 @@
     "nate_scared"
    ],
    "first_line": "i'd survive a zombie apocalypse by just becoming a zombie early"
+  },
+  {
+   "key": "seed-s01",
+   "id": "s01",
+   "pov": "Marco",
+   "bits": [
+    "benny_eta"
+   ],
+   "first_line": "omw!!"
   }
  ],
  "callbacks": [],
