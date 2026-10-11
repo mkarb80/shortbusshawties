@@ -57,6 +57,15 @@
     "benny_late"
    ],
    "first_line": "let's go hiking saturday"
+  },
+  {
+   "key": "seed-s05",
+   "id": "s05",
+   "pov": "Luis",
+   "bits": [
+    "luis_story"
+   ],
+   "first_line": "ok so funny story. so last weekend at the festival this guy next to me started t"
   }
  ],
  "callbacks": [],
