@@ -1,5 +1,5 @@
-name: Daily learn and refill
-# Runs hourly but only does work at 10am Pacific, once per day (same trick as the poster, so DST never matters).
+name: Daily data and analysis
+# Runs hourly but only does work at 9am Pacific (the Claude routine runs at 10am and writes the posts), once per day (same trick as the poster, so DST never matters).
 on:
   schedule:
     - cron: "41 * * * *"
@@ -25,7 +25,7 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install pillow==11.3.0
-      - name: Analyze, learn, refill queue, post readout
+      - name: Pull Instagram numbers, update strategy data
         env:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
