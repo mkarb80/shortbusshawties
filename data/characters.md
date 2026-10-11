@@ -27,7 +27,6 @@ Roast rule: the butt of the joke rotates, mainly Benny, Marco, Dre. Everyone is 
 - Family-first, the rock of his family.
 - Outdoorsy and athletic, but complains about knees and back, and about leaving the house after 6pm. Nick Miller from New Girl energy.
 - Says "i think that's a bad idea" and is the first one to do it. Benny can talk him into anything.
-- "Marco in Seattle": the running tag whenever he ends up in a bizarre situation.
 - Marco + Benny = Schmidt and Nick bromance, an old married couple.
 - Quiet generally, expressive and loud with the right group.
 
@@ -58,13 +57,12 @@ Roast rule: the butt of the joke rotates, mainly Benny, Marco, Dre. Everyone is 
 4. Nate must be home before his wife goes to sleep.
 5. Luis starts a story. Everyone checks out.
 6. Benny's ETA: the group bets over/under.
-7. "Marco in Seattle."
 8. Dre roasts Marco for not having a job.
 9. Marco's knees/back, and refusing to leave the house after 6pm.
 10. Nate and dessert / Nate losing a game.
 
 ## Line we don't cross
-Dark and dumb, aimed at life and the guys' own stupidity. No slurs. No jokes whose punchline is a race, religion, disability, sexuality or body type. (Marco's "Seattle" weirdness is about the situation, not who he's with.)
+Dark and dumb, aimed at life and the guys' own stupidity. No slurs. No jokes whose punchline is a race, religion, disability, sexuality or body type. 
 
 ## Format rules (from Arpit)
 - Always a group text. Everyone is on their OWN phone, at home or out and about. Never "we're all in the room" scenes (no game night in person, no "you're asleep on the couch" right now).
@@ -78,3 +76,6 @@ Dark and dumb, aimed at life and the guys' own stupidity. No slurs. No jokes who
 - Marco's money = running MYSTERY. He has money from an inheritance, but it is rarely addressed. Because he has free time, the guys pitch random business ideas for him (e.g. "buy one chicken and sell eggs"). Dre roasts him for "not having a job."
 - Dre's marriage: show how weird he is as a husband. Recurring line: "Dre's wife has accepted it."
 - Batch 1 feedback: all jokes landed. The only miss was a scene where the guys were in the same room but still texting (a setting problem, not tone). Solo-character bits are welcome.
+
+## Canon updates (round 3)
+- Dropped the "Marco in Seattle" tag: too inside-jokey. Keep bits relatable so outsiders feel like insiders in the chat.
