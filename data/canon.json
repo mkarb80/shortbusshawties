@@ -66,6 +66,16 @@
     "luis_story"
    ],
    "first_line": "ok so funny story. so last weekend at the festival this guy next to me started t"
+  },
+  {
+   "key": "seed-s04",
+   "id": "s04",
+   "pov": "Marco",
+   "bits": [
+    "outsider",
+    "nate_sleeps"
+   ],
+   "first_line": "nate was incredible last night lol"
   }
  ],
  "callbacks": [],
