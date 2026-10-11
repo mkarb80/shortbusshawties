@@ -1,0 +1,49 @@
+{
+ "format": "chat",
+ "pov": "Marco",
+ "theme": "light",
+ "time": "Tue 4:15 PM",
+ "bits": [
+  "family"
+ ],
+ "messages": [
+  {
+   "from": "Marco",
+   "text": "my mom just texted me thinking i was her friend"
+  },
+  {
+   "from": "Marco",
+   "text": "asking if linda's surgery went okay"
+  },
+  {
+   "from": "Dre",
+   "text": "who's linda"
+  },
+  {
+   "from": "Marco",
+   "text": "i don't know"
+  },
+  {
+   "from": "Marco",
+   "text": "i said it went great"
+  },
+  {
+   "from": "Nate",
+   "text": "that's nice of you"
+  },
+  {
+   "from": "Marco",
+   "text": "she said 'oh thank god, she was so scared'"
+  },
+  {
+   "from": "Dre",
+   "text": "so linda's fine"
+  },
+  {
+   "from": "Marco",
+   "text": "linda is thriving"
+  }
+ ],
+ "caption": "linda is thriving\n\n#groupchat #mom #relatable #funny #texts",
+ "id": "a01"
+}
