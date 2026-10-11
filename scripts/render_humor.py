@@ -131,67 +131,143 @@ THEMES = {
 }
 SENT = (10, 132, 255)
 
-def chat(title, messages, handle, pov=None, theme="dark", stamp=None):
+def _status_bar(img, d, T, clock):
+    fg = T["name"]
+    d.text((118, 52), clock, font=F("Inter-SemiBold.otf", 46), fill=fg)
+    x = 740
+    for i in range(4):  # signal
+        h = 14 + i * 9
+        d.rounded_rectangle([x + i * 15, 88 - h, x + i * 15 + 9, 88], radius=2, fill=fg if i < 3 else T["sub"])
+    d.text((812, 56), "5G", font=F("Inter-SemiBold.otf", 38), fill=fg)
+    d.rounded_rectangle([900, 56, 1000, 94], radius=11, fill=fg)  # battery
+    d.text((950 - d.textlength("78", font=F("Inter-Bold.otf", 30)) / 2, 58), "78", font=F("Inter-Bold.otf", 30), fill=T["bg"])
+    d.rounded_rectangle([1004, 68, 1010, 82], radius=2, fill=T["sub"])
+
+def _tail(d, x0, y0, x1, y1, color, bg, right):
+    """iMessage bubble tail at the bottom corner."""
+    if right:
+        d.ellipse([x1 - 34, y1 - 40, x1 + 10, y1 + 1], fill=color)
+        d.ellipse([x1 - 6, y1 - 46, x1 + 40, y1 + 6], fill=bg)
+        d.rectangle([x1 - 30, y1 - 22, x1 - 14, y1], fill=color)
+    else:
+        d.ellipse([x0 - 10, y1 - 40, x0 + 34, y1 + 1], fill=color)
+        d.ellipse([x0 - 40, y1 - 46, x0 + 6, y1 + 6], fill=bg)
+        d.rectangle([x0 + 14, y1 - 22, x0 + 30, y1], fill=color)
+
+def chat(title, messages, handle, pov=None, theme="dark", stamp=None, H=1920, unread=None):
+    """Full-phone iMessage screenshot (default 1080x1920, 9:16). H=1350 gives the 4:5 fallback."""
     T = THEMES[theme]
     speakers = [m["from"] for m in messages if "from" in m]
     pov = pov or max(set(speakers), key=speakers.count)
     img = Image.new("RGB", (W, H), T["bg"]); d = ImageDraw.Draw(img)
-    # header
-    d.rectangle([0, 0, W, 250], fill=T["head"]); d.line([0, 250, W, 250], fill=(60, 60, 64) if theme == "dark" else (210, 210, 214), width=2)
-    gp = group_photo(110); img.paste(gp, (int(W/2 - 55), 28), gp)
-    ft = F("Inter-SemiBold.otf", 34)
-    parts = title.split("{bus}"); label = parts[0].strip()
-    tw = run_width(d, label, ft) + (52 if len(parts) > 1 else 0) + 26
-    x = (W - tw) / 2
-    d.text((x, 154), label, font=ft, fill=T["name"]); x += run_width(d, label, ft) + 10
-    if len(parts) > 1:
-        ic = bus_icon(44); img.paste(ic, (int(x), 158), ic); x += 52
-    d.text((x, 156), "›", font=F("Inter-Regular.otf", 32), fill=T["sub"])
-    d.text((36, 96), "‹", font=F("Inter-Regular.otf", 84), fill=SENT)
-    # layout
-    size = 60
-    for _ in range(24):
-        fm = F("Inter-Regular.otf", size); fn = F("Inter-Regular.otf", int(size * 0.58))
-        items, total, prev = [], 0, None
+    line_c = (60, 60, 64) if theme == "dark" else (210, 210, 214)
+    pill = (44, 44, 46) if theme == "dark" else (232, 232, 235)
+    HEAD_B, INPUT_T = (370 if H > 1500 else 330), H - (210 if H > 1500 else 175)
+    gap_grp = 30 if H > 1500 else 14
+    size = 58 if H > 1500 else 50
+    for _ in range(40):
+        fm = F("Inter-Regular.otf", size); fn = F("Inter-Regular.otf", int(size * 0.5))
+        items, total = [], 0
         if stamp:
-            items.append(("sys", stamp, None)); total += size * 1.5
-        for m in messages:
+            items.append(["stamp", stamp, None]); total += size * 2.0
+        prev = None
+        for i, m in enumerate(messages):
             if "system" in m:
-                items.append(("sys", m["system"], None)); total += size * 1.5; prev = None; continue
+                items.append(["sys", m["system"], None]); total += size * 1.6; prev = None; continue
             mine = m["from"] == pov
-            maxw = 780 if mine else 720
-            lines = wrap(d, m["text"], fm, maxw)
+            lines = wrap(d, m["text"], fm, 800 if mine else 740)
             bw = max(run_width(d, l, fm) for l in lines) + 56
-            bh = len(lines) * size * 1.2 + 28
-            show_name = (not mine) and m["from"] != prev
-            items.append(("msg", m, (lines, bw, bh, show_name, mine)))
-            total += bh + (size * 0.62 if show_name else 0) + 9
+            bh = len(lines) * size * 1.18 + 30
+            first = m["from"] != prev
+            nxt = messages[i + 1] if i + 1 < len(messages) else None
+            last = not (nxt and "from" in nxt and nxt["from"] == m["from"])
+            show_name = first and not mine
+            items.append(["msg", m, (lines, bw, bh, show_name, mine, last)])
+            total += bh + (size * 0.6 if show_name else 0) + (gap_grp if last else 6)
             prev = m["from"]
-        if total <= H - 340: break
-        size -= 3
-    y = 280 + max(0, (H - 360 - total)) * 0.25
+        total += 56  # Delivered
+        if total <= INPUT_T - HEAD_B - 30: break
+        size -= 2
+    y = INPUT_T - 24 - total
+    last_mine_bottom = None; prev = None
     for kind, m, geo in items:
+        if kind == "stamp":
+            parts = m.split(" ", 1)
+            fb, fr = F("Inter-SemiBold.otf", int(size * 0.5)), F("Inter-Regular.otf", int(size * 0.5))
+            if len(parts) == 2:
+                w = d.textlength(parts[0] + " ", font=fb) + d.textlength(parts[1], font=fr)
+                x = (W - w) / 2
+                d.text((x, y + 4), parts[0] + " ", font=fb, fill=T["sub"])
+                d.text((x + d.textlength(parts[0] + " ", font=fb), y + 4), parts[1], font=fr, fill=T["sub"])
+            else:
+                d.text(((W - d.textlength(m, font=fr)) / 2, y + 4), m, font=fr, fill=T["sub"])
+            y += size * 2.0; continue
         if kind == "sys":
-            fs = F("Inter-Medium.otf", int(size * 0.55))
-            d.text(((W - d.textlength(m, font=fs)) / 2, y + size * 0.2), m, font=fs, fill=T["sub"]); y += size * 1.5; continue
-        lines, bw, bh, show_name, mine = geo
+            fs = F("Inter-Medium.otf", int(size * 0.5))
+            d.text(((W - d.textlength(m, font=fs)) / 2, y + 6), m, font=fs, fill=T["sub"]); y += size * 1.6; prev = None; continue
+        lines, bw, bh, show_name, mine, last = geo
         if show_name:
-            d.text((150, y), m["from"], font=fn, fill=T["sub"]); y += size * 0.62
+            d.text((150, y), m["from"], font=fn, fill=T["sub"]); y += size * 0.6
         if mine:
-            x0 = W - 44 - bw; color, tcol = SENT, (255, 255, 255)
+            x0 = W - 40 - bw; color, tcol = SENT, (255, 255, 255)
         else:
             x0 = 136; color, tcol = T["recv"], T["rtxt"]
-            ay = y + bh - 72
-            d.ellipse([40, ay, 112, ay + 72], fill=CAST.get(m["from"], (100, 100, 100)))
-            fi = F("Inter-SemiBold.otf", 32); t = m["from"][0]
-            d.text((76 - d.textlength(t, font=fi) / 2, ay + 14), t, font=fi, fill=(255, 255, 255))
         d.rounded_rectangle([x0, y, x0 + bw, y + bh], radius=min(46, bh / 2), fill=color)
-        ty = y + 14
+        if last:
+            _tail(d, x0, y, x0 + bw, y + bh, color, T["bg"], mine)
+            if not mine:
+                ay = y + bh - 72
+                d.ellipse([34, ay, 106, ay + 72], fill=CAST.get(m["from"], (100, 100, 100)))
+                fi = F("Inter-SemiBold.otf", 32); t = m["from"][0]
+                d.text((70 - d.textlength(t, font=fi) / 2, ay + 14), t, font=fi, fill=(255, 255, 255))
+        ty = y + 13
         for ln in lines:
-            draw_run(img, d, (x0 + 28, ty), ln, fm, tcol); ty += size * 1.2
-        y += bh + 9
-    fh = F("Inter-Medium.otf", 28)
-    d.text(((W - d.textlength(handle, font=fh)) / 2, H - 70), handle, font=fh, fill=T["handle"])
+            draw_run(img, d, (x0 + 28, ty), ln, fm, tcol); ty += size * 1.18
+        y += bh + (gap_grp if last else 6)
+        if mine: last_mine_bottom = y
+        prev = m["from"]
+    if last_mine_bottom and messages and "from" in messages[-1] and messages[-1]["from"] == pov:
+        fd_ = F("Inter-Medium.otf", int(size * 0.46)); t = "Delivered"
+        d.text((W - 48 - d.textlength(t, font=fd_), last_mine_bottom - gap_grp + 2), t, font=fd_, fill=T["sub"])
+    # ---- header: iOS-style floating pills over a solid fade ----
+    d.rectangle([0, 0, W, HEAD_B], fill=T["bg"])
+    m_ = re.search(r"\d{1,2}:\d{2}\s?[AP]M", stamp or "")
+    clock = (m_.group(0).replace(" ", "")[:-2]) if m_ else "9:41"
+    _status_bar(img, d, T, clock)
+    cy = 190
+    d.rounded_rectangle([44, cy - 50, 252, cy + 50], radius=50, fill=pill)
+    d.text((72, cy - 62), "‹", font=F("Inter-Regular.otf", 100), fill=T["name"])
+    badge = str(unread if unread else 12)
+    d.rounded_rectangle([140, cy - 30, 232, cy + 30], radius=30, fill=(255, 255, 255) if theme == "dark" else (255, 255, 255), outline=line_c if theme != "dark" else None)
+    fbk = F("Inter-SemiBold.otf", 36)
+    d.text((186 - d.textlength(badge, font=fbk) / 2, cy - 22), badge, font=fbk, fill=(0, 0, 0))
+    d.ellipse([934, cy - 50, 1036, cy + 52], fill=pill)  # video button
+    d.rounded_rectangle([956, cy - 18, 1000, cy + 18], radius=8, outline=T["name"], width=5)
+    d.polygon([(1002, cy - 8), (1018, cy - 18), (1018, cy + 18), (1002, cy + 8)], fill=T["name"])
+    gp = group_photo(140); img.paste(gp, (int(W / 2 - 70), 118), gp)
+    ft = F("Inter-SemiBold.otf", 42)
+    parts = title.split("{bus}"); label = parts[0].strip()
+    tw = run_width(d, label, ft) + (58 if len(parts) > 1 else 0) + 40
+    px0 = W / 2 - tw / 2 - 28
+    d.rounded_rectangle([px0, 276, px0 + tw + 56, 346], radius=35, fill=pill)
+    x = px0 + 28
+    d.text((x, 284), label, font=ft, fill=T["name"]); x += run_width(d, label, ft) + 10
+    if len(parts) > 1:
+        ic = bus_icon(50); img.paste(ic, (int(x), 288), ic); x += 58
+    d.text((x, 280), "›", font=F("Inter-Regular.otf", 44), fill=T["sub"])
+    # ---- input bar ----
+    d.rectangle([0, INPUT_T, W, H], fill=T["bg"])
+    d.ellipse([28, INPUT_T + 20, 118, INPUT_T + 110], fill=pill)
+    d.rectangle([52, INPUT_T + 62, 94, INPUT_T + 68], fill=T["name"]); d.rectangle([70, INPUT_T + 44, 76, INPUT_T + 86], fill=T["name"])
+    d.rounded_rectangle([138, INPUT_T + 20, W - 28, INPUT_T + 110], radius=45, outline=line_c, width=3)
+    d.text((176, INPUT_T + 38), "iMessage", font=F("Inter-Regular.otf", 44), fill=T["handle"])
+    mx = W - 100  # mic
+    d.rounded_rectangle([mx, INPUT_T + 38, mx + 24, INPUT_T + 72], radius=12, fill=T["sub"])
+    d.arc([mx - 10, INPUT_T + 52, mx + 34, INPUT_T + 90], 0, 180, fill=T["sub"], width=4)
+    d.line([mx + 12, INPUT_T + 90, mx + 12, INPUT_T + 98], fill=T["sub"], width=4)
+    fh = F("Inter-Medium.otf", 22)
+    d.text(((W - d.textlength(handle, font=fh)) / 2, H - 66), handle, font=fh, fill=T["handle"])
+    d.rounded_rectangle([W / 2 - 150, H - 30, W / 2 + 150, H - 22], radius=4, fill=T["name"])
     chat.last_size = size
     return img
 
@@ -205,8 +281,9 @@ def render_post(item, handle, outdir, name="ShortbusShawties"):
         return [save(tweet(item["text"], name, handle, item.get("dark", True)), os.path.join(outdir, "post.jpg"))]
     if fmt == "chat":
         theme = item.get("theme") or ("light" if datetime.now().toordinal() % 2 else "dark")
+        h = int(item.get("height") or os.environ.get("CHAT_H") or 1920)
         return [save(chat(item.get("title", "Short Bus Shawties {bus}"), item["messages"], handle,
-                          item.get("pov"), theme, item.get("time")), os.path.join(outdir, "post.jpg"))]
+                          item.get("pov"), theme, item.get("time"), H=h), os.path.join(outdir, "post.jpg"))]
     if fmt == "carousel":  # each slide is its own tweet or chat item
         return [render_post(s, handle, os.path.join(outdir, f"s{i + 1:02d}"), name)[0] for i, s in enumerate(item["slides"])]
     raise ValueError(f"unknown format {fmt}")
