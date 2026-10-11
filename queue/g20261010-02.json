@@ -1,0 +1,46 @@
+{
+ "id": "g20261010-02",
+ "format": "chat",
+ "pov": "Benny",
+ "theme": "light",
+ "time": "Fri 9:03 PM",
+ "topic": "lateness",
+ "bits": [
+  "benny_eta"
+ ],
+ "messages": [
+  {
+   "from": "Benny",
+   "text": "heading out now"
+  },
+  {
+   "from": "Dre",
+   "text": "it started 40 minutes ago"
+  },
+  {
+   "from": "Benny",
+   "text": "i know i'm sorry"
+  },
+  {
+   "from": "Marco",
+   "text": "where are you"
+  },
+  {
+   "from": "Benny",
+   "text": "my house"
+  },
+  {
+   "from": "Benny",
+   "text": "i'm gonna stop and get coffee first"
+  },
+  {
+   "from": "Dre",
+   "text": "you have coffee at your house"
+  },
+  {
+   "from": "Benny",
+   "text": "it's different coffee"
+  }
+ ],
+ "caption": "different coffee\n\n#groupchat #late #friends #relatable #funny"
+}
