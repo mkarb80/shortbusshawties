@@ -46,6 +46,17 @@
     "bad_idea"
    ],
    "first_line": "don't ask"
+  },
+  {
+   "key": "seed-s06",
+   "id": "s06",
+   "pov": "Marco",
+   "bits": [
+    "outdoors",
+    "marco_knees",
+    "benny_late"
+   ],
+   "first_line": "let's go hiking saturday"
   }
  ],
  "callbacks": [],
