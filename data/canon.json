@@ -27,6 +27,15 @@
     "onlyfans"
    ],
    "first_line": "just saw marco's gym story"
+  },
+  {
+   "key": "seed-s08",
+   "id": "s08",
+   "pov": "Nate",
+   "bits": [
+    "nate_dessert"
+   ],
+   "first_line": "i made 12 brownies for the week"
   }
  ],
  "callbacks": [],
