@@ -161,21 +161,37 @@ def publish(item, key, origin, origin_id):
         log("DRY RUN rendered:", rel)
         print(caption)
         return ""
-    sha = git_push(rel + [f"{out_rel}/caption.txt"], f"Render post {key}")
-    urls = public_urls(rel, sha)
     me = api("GET", "me", fields="user_id,username")
     ig = me.get("user_id") or me.get("id")
     log("Posting as", me.get("username"), ig)
-    if len(urls) == 1:
-        cid = api("POST", f"{ig}/media", image_url=urls[0], caption=caption)["id"]
-    else:
-        kids = []
-        for u in urls:
-            kid = api("POST", f"{ig}/media", image_url=u, is_carousel_item="true")["id"]
-            wait_ready(kid)
-            kids.append(kid)
-        cid = api("POST", f"{ig}/media", media_type="CAROUSEL", children=",".join(kids), caption=caption)["id"]
-    wait_ready(cid)
+
+    def create_and_wait(rel_paths):
+        sha = git_push(rel_paths + [f"{out_rel}/caption.txt"], f"Render post {key}")
+        urls = public_urls(rel_paths, sha)
+        if len(urls) == 1:
+            cid = api("POST", f"{ig}/media", image_url=urls[0], caption=caption)["id"]
+        else:
+            kids = []
+            for u in urls:
+                kid = api("POST", f"{ig}/media", image_url=u, is_carousel_item="true")["id"]
+                wait_ready(kid)
+                kids.append(kid)
+            cid = api("POST", f"{ig}/media", media_type="CAROUSEL", children=",".join(kids), caption=caption)["id"]
+        wait_ready(cid)
+        return cid
+
+    try:
+        cid = create_and_wait(rel)
+    except SystemExit as e:
+        # Full-phone (9:16) screenshots may be rejected as out of range; fall back to 4:5 once.
+        if item.get("format") == "chat" and not item.get("height") and os.environ.get("CHAT_H") != "1350":
+            log("Tall image rejected, retrying at 4:5:", e)
+            os.environ["CHAT_H"] = "1350"
+            paths = render_post(item, HANDLE, os.path.join(ROOT, out_rel), NAME)
+            rel = [os.path.relpath(p, ROOT) for p in paths]
+            cid = create_and_wait(rel)
+        else:
+            raise
     media_id = api("POST", f"{ig}/media_publish", creation_id=cid)["id"]
     link = api("GET", media_id, fields="permalink").get("permalink", "")
     log("Published", key, media_id, link)
@@ -207,10 +223,7 @@ def pick_slot():
 
 def main():
     if not TOKEN and not DRY:
-        if SEED or FORCE:
-            raise SystemExit("IG_ACCESS_TOKEN secret is missing.")
-        log("IG_ACCESS_TOKEN not set yet. Nothing to do.")
-        return
+        raise SystemExit("IG_ACCESS_TOKEN secret is missing.")
     if SEED:
         items = load("data/seed.json")
         todo = [it for it in reversed(items) if not os.path.exists(os.path.join(ROOT, "posted", f"seed-{it['id']}.json"))]
@@ -219,9 +232,6 @@ def main():
             publish(it, f"seed-{it['id']}", "seed", it["id"])
             if n < len(todo) - 1 and not DRY:
                 time.sleep(SEED_GAP)
-        return
-    if not DRY and any(not os.path.exists(os.path.join(ROOT, "posted", f"seed-{it['id']}.json")) for it in load("data/seed.json")):
-        log("Launch seed posts are not all published yet. Run the workflow once with 'seed' ticked. Waiting.")
         return
     slot = pick_slot()
     if not slot:
