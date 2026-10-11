@@ -1,0 +1,26 @@
+name: Promote Claude branches
+# If the Claude routine could only push to a claude/ branch, fast-forward main to it, but only when the change touches queue/ and data/ alone.
+on:
+  push:
+    branches: ["claude/**"]
+permissions:
+  contents: write
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: daily-post
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Fast-forward main if safe
+        run: |
+          set -e
+          git fetch origin main
+          changed=$(git diff --name-only origin/main...HEAD)
+          echo "$changed"
+          if echo "$changed" | grep -qvE '^(queue|data)/'; then echo "Touches other paths; not promoting."; exit 0; fi
+          git merge-base --is-ancestor origin/main HEAD || { echo "main moved; rebasing"; git config user.name shortbus-bot; git config user.email shortbus-bot@users.noreply.github.com; git rebase origin/main; }
+          git push origin HEAD:main
