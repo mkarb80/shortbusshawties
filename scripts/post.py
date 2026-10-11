@@ -207,7 +207,10 @@ def pick_slot():
 
 def main():
     if not TOKEN and not DRY:
-        raise SystemExit("IG_ACCESS_TOKEN secret is missing.")
+        if SEED or FORCE:
+            raise SystemExit("IG_ACCESS_TOKEN secret is missing.")
+        log("IG_ACCESS_TOKEN not set yet. Nothing to do.")
+        return
     if SEED:
         items = load("data/seed.json")
         todo = [it for it in reversed(items) if not os.path.exists(os.path.join(ROOT, "posted", f"seed-{it['id']}.json"))]
@@ -216,6 +219,9 @@ def main():
             publish(it, f"seed-{it['id']}", "seed", it["id"])
             if n < len(todo) - 1 and not DRY:
                 time.sleep(SEED_GAP)
+        return
+    if not DRY and any(not os.path.exists(os.path.join(ROOT, "posted", f"seed-{it['id']}.json")) for it in load("data/seed.json")):
+        log("Launch seed posts are not all published yet. Run the workflow once with 'seed' ticked. Waiting.")
         return
     slot = pick_slot()
     if not slot:
