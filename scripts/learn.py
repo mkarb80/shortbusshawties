@@ -1,4 +1,4 @@
-"""Daily 10am PT job: analyze performance, update strategy, refill the queue to 10 days, post a readout.
+"""Daily 9am PT data job (the Claude routine at 10am does the thinking and writing): analyze performance, update strategy, refill the queue to 10 days, post a readout.
 
 Steps: analyze.py -> decide (topic mix, best posting hours) -> write data/schedule.json ->
 generate posts with the Claude API until 20 are queued (10 days x 2/day) -> data/learnings.md (<=10 lines)
@@ -236,22 +236,58 @@ def git_push(msg):
     raise SystemExit("push failed")
 
 
+def sweep():
+    """Move queued posts that fail the checks (or cannot render readably) to data/rejected/ so they never block posting."""
+    moved = []
+    recent = set()
+    for qid in unposted_queue():
+        p = load(f"queue/{qid}.json")
+        why = valid(p, recent)
+        if not why:
+            try:
+                render_post({**p, "format": "chat"}, "@shortbusshawties", "/tmp/sweep")
+                if chat.last_size < 30: why = "too crowded"
+            except Exception as e:
+                why = f"render {e}"
+        if why:
+            save(f"data/rejected/{qid}.json", {**p, "_rejected": why})
+            os.remove(os.path.join(ROOT, "queue", f"{qid}.json")); moved.append((qid, why))
+        else:
+            recent.add(p["messages"][0]["text"].strip().lower()[:40])
+    return moved
+
+
+def write_state(moved):
+    q = unposted_queue()
+    firsts = []
+    for it in all_items().values():
+        if it.get("messages"):
+            firsts.append(it["messages"][0]["text"][:60])
+    save("data/state.json", {"updated": TODAY, "target": TARGET, "unposted": q, "unposted_count": len(q),
+                            "need": max(0, TARGET - len(q)), "swept": [f"{a}: {b}" for a, b in moved],
+                            "windows": {k: list(v) for k, v in schedule().items()}, "existing_first_lines": sorted(set(firsts))})
+
+
 def main():
     state = load("data/learn_state.json", {}) or {}
-    if not FORCE and (NOW.hour != 10 or state.get("last_run") == TODAY):
-        log(f"Not the 10am run (PT hour {NOW.hour}, last run {state.get('last_run')})."); return
+    if not FORCE and (NOW.hour != int(os.environ.get("LEARN_HOUR") or 9) or state.get("last_run") == TODAY):
+        log(f"Not the daily run (PT hour {NOW.hour}, last run {state.get('last_run')})."); return
     subprocess.run([sys.executable, os.path.join(ROOT, "scripts", "analyze.py")], check=False)
     stats = load("data/stats.json", {}) or {}
     plan, sched, changes = decide(stats)
     save("data/schedule.json", {"a": list(sched["a"]), "b": list(sched["b"]), "updated": TODAY})
+    moved = sweep()
     queue = unposted_queue(); need = max(0, TARGET - len(queue)); added, note = 0, None
-    if need:
+    if need and not KEY:
+        note = f"Queue: {len(queue)} ready (~{len(queue) // 2} days). The Claude routine at 10am writes the next {need}."
+    elif need:
         try:
             posts = generate(need, plan, stats)
             added = len(write_queue(posts))
             if added < need: note = f"Queue: only +{added} of {need} needed posts passed checks; {len(queue) + added} ready (~{(len(queue) + added) // 2} days)."
         except Exception as e:
             note = f"Queue NOT refilled ({e}). {len(queue)} posts ready (~{len(queue) // 2} days)."
+    write_state(moved)
     lines = readout(stats, plan, changes, added, len(unposted_queue()), note)
     text = "\n".join(lines)
     with open(os.path.join(ROOT, "data", "learnings.md"), "w") as fh:
@@ -263,7 +299,7 @@ def main():
     print("\n" + text)
     if not DRY:
         git_push(f"Daily learn {TODAY}: +{added} posts")
-        open_issue(f"Daily learnings {TODAY}", text)
+        if KEY: open_issue(f"Daily learnings {TODAY}", text)
 
 
 if __name__ == "__main__":
