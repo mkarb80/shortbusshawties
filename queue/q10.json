@@ -5,7 +5,6 @@
  "theme": "light",
  "time": "Fri 8:21 PM",
  "bits": [
-  "marco_seattle",
   "bad_idea"
  ],
  "messages": [
@@ -23,7 +22,7 @@
   },
   {
    "from": "Benny",
-   "text": "MARCO IN SEATTLE 🌲"
+   "text": "where are you"
   },
   {
    "from": "Marco",
@@ -38,10 +37,6 @@
    "text": "...yes"
   },
   {
-   "from": "Nate",
-   "text": "did you go in on your own"
-  },
-  {
    "from": "Marco",
    "text": "they offered me a sandwich"
   },
@@ -50,5 +45,5 @@
    "text": "that's all it ever takes with you"
   }
  ],
- "caption": "Marco in Seattle, episode 2 🌲\n\n#groupchat #bromance #memes #funny #friends"
+ "caption": "he always says it's a bad idea first 😭\n\n#groupchat #bromance #memes #funny #friends"
 }
