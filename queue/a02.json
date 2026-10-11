@@ -1,0 +1,45 @@
+{
+ "format": "chat",
+ "pov": "Dre",
+ "theme": "dark",
+ "time": "Mon 3:12 PM",
+ "bits": [
+  "work"
+ ],
+ "messages": [
+  {
+   "from": "Dre",
+   "text": "i have a 3pm meeting that could've been an email"
+  },
+  {
+   "from": "Marco",
+   "text": "most are"
+  },
+  {
+   "from": "Dre",
+   "text": "this one could've been nothing"
+  },
+  {
+   "from": "Nate",
+   "text": "why are you going"
+  },
+  {
+   "from": "Dre",
+   "text": "i'm not"
+  },
+  {
+   "from": "Dre",
+   "text": "i'm in the parking lot"
+  },
+  {
+   "from": "Benny",
+   "text": "you're late to a meeting you're not going to"
+  },
+  {
+   "from": "Dre",
+   "text": "i'm still late"
+  }
+ ],
+ "caption": "still late\n\n#groupchat #work #relatable #funny #texts",
+ "id": "a02"
+}
