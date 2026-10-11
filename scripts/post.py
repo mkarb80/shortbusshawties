@@ -132,13 +132,26 @@ def build_caption(it):
                                  "#groupchat #darkhumor #memes #relatable #funny")
 
 
+def sane(it):
+    try:
+        ms = it["messages"]
+        return it.get("format", "chat") == "chat" and 3 <= len(ms) <= 10 and all(m.get("from") and m.get("text") for m in ms)
+    except Exception:
+        return False
+
+
 def next_item():
     done = used("queue_id")
     for f in sorted(glob.glob(os.path.join(ROOT, "queue", "*.json"))):
         qid = os.path.splitext(os.path.basename(f))[0]
         if qid not in done:
-            with open(f) as fh:
-                it = json.load(fh)
+            try:
+                with open(f) as fh:
+                    it = json.load(fh)
+            except Exception:
+                log("skipping unreadable queue file", qid); continue
+            if not sane(it):
+                log("skipping malformed queue file", qid); continue
             it.setdefault("id", qid)
             return it, "queue", qid
     bank = load("data/bank.json")
