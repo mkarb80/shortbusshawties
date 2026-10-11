@@ -1,0 +1,33 @@
+{
+ "id": "q07",
+ "format": "chat",
+ "pov": "Luis",
+ "theme": "dark",
+ "time": "Mon 9:15 PM",
+ "bits": [
+  "luis_long_text"
+ ],
+ "messages": [
+  {
+   "from": "Luis",
+   "text": "hey everyone, so i've been thinking about this a lot lately and i don't want to make a big deal out of it, but i feel like when we're all making plans, and i'm not trying to be negative because i love hanging out with you guys, it might be helpful if we could maybe pick a date that works for everybody, but also i'm fine with whatever you decide"
+  },
+  {
+   "from": "Dre",
+   "text": "luis what's the plan"
+  },
+  {
+   "from": "Marco",
+   "text": "tldr?"
+  },
+  {
+   "from": "Luis",
+   "text": "i have wine with my grandparents thursday"
+  },
+  {
+   "from": "Dre",
+   "text": "it took 70 words to say you're busy"
+  }
+ ],
+ "caption": "tag the friend who writes paragraphs\n\n#groupchat #darkhumor #relatable #boys #funny"
+}

@@ -1,0 +1,18 @@
+{
+ "chat_name": "Short Bus Shawties",
+ "cast": [
+  "Dre",
+  "Nate",
+  "Marco",
+  "Benny",
+  "Luis"
+ ],
+ "posted_log": [],
+ "callbacks": [],
+ "relationships_to_name": {
+  "dre_wife": null,
+  "nate_wife": null,
+  "luis_girlfriend": null
+ },
+ "note": "After each post is published, append a one-line summary to posted_log and any new running gag to callbacks, so later posts can build on it."
+}

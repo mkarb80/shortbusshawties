@@ -1,0 +1,42 @@
+name: Instagram post
+on:
+  schedule:
+    # Hourly; the script only posts inside the 12-3pm and 8-11pm Pacific windows, once per window.
+    - cron: "17 * * * *"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Post the next unposted slot now (still never double-posts)"
+        type: boolean
+        default: true
+      dry_run:
+        description: "Render only, do not post"
+        type: boolean
+        default: false
+      seed:
+        description: "ONE-TIME launch: post the 10 seed posts, 3 minutes apart"
+        type: boolean
+        default: false
+permissions:
+  contents: write
+concurrency:
+  group: daily-post
+  cancel-in-progress: false
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pillow==11.3.0
+      - name: Post if not done today
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_HANDLE: ${{ vars.IG_HANDLE }}
+          FORCE: ${{ github.event_name == 'workflow_dispatch' && inputs.force && '1' || '0' }}
+          DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run && '1' || '0' }}
+          SEED: ${{ github.event_name == 'workflow_dispatch' && inputs.seed && '1' || '0' }}
+        run: python scripts/post.py

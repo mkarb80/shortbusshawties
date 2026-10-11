@@ -1,0 +1,23 @@
+name: Refresh Instagram token
+# Instagram long-lived tokens expire after 60 days unless refreshed. This refreshes weekly.
+on:
+  schedule:
+    - cron: "23 17 * * 1"
+  workflow_dispatch:
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Refresh and store token
+        env:
+          OLD: ${{ secrets.IG_ACCESS_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          resp=$(curl -sS "https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=${OLD}")
+          new=$(echo "$resp" | python3 -c "import sys,json; print(json.load(sys.stdin).get('access_token',''))")
+          if [ -z "$new" ]; then echo "Refresh failed: $(echo "$resp" | sed 's/access_token[^,]*//')"; exit 1; fi
+          echo "::add-mask::$new"
+          gh secret set IG_ACCESS_TOKEN --repo "$REPO" --body "$new"
+          echo "Token refreshed; expires_in: $(echo "$resp" | python3 -c "import sys,json; print(json.load(sys.stdin).get('expires_in'))")s"
