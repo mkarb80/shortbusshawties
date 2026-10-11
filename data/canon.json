@@ -85,6 +85,16 @@
     "nate_wife"
    ],
    "first_line": "let's hang tonight"
+  },
+  {
+   "key": "seed-s02",
+   "id": "s02",
+   "pov": "Nate",
+   "bits": [
+    "dre_unhinged",
+    "nate_scared"
+   ],
+   "first_line": "i'd survive a zombie apocalypse by just becoming a zombie early"
   }
  ],
  "callbacks": [],
