@@ -32,7 +32,8 @@ DRY = os.environ.get("DRY_RUN") == "1"
 SEED = os.environ.get("SEED") == "1"
 SEED_GAP = int(os.environ.get("SEED_GAP") or "180")
 REPO = os.environ.get("GITHUB_REPOSITORY", "")
-SLOTS = {"a": (12, 15), "b": (20, 23)}
+from common import schedule  # noqa: E402
+SLOTS = schedule()  # learned posting windows (data/schedule.json); defaults a 12-14, b 20-22 PT
 
 
 def log(*a):
@@ -197,7 +198,8 @@ def publish(item, key, origin, origin_id):
     log("Published", key, media_id, link)
 
     rec = {"key": key, "media_id": media_id, "permalink": link, "origin": origin,
-           "posted_at": datetime.now(TZ).isoformat(), "pov": item.get("pov"), "bits": item.get("bits", [])}
+           "posted_at": datetime.now(TZ).isoformat(), "pov": item.get("pov"), "bits": item.get("bits", []),
+           "topic": item.get("topic"), "theme": item.get("theme"), "hour_pt": datetime.now(TZ).hour}
     rec[{"queue": "queue_id", "bank": "bank_id", "seed": "seed_id"}[origin]] = origin_id
     done_rel = f"posted/{key}.json"
     os.makedirs(os.path.join(ROOT, "posted"), exist_ok=True)
