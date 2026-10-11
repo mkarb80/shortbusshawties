@@ -113,6 +113,15 @@
     "family"
    ],
    "first_line": "my mom just texted me thinking i was her friend"
+  },
+  {
+   "key": "2026-10-11-a",
+   "id": "a02",
+   "pov": "Dre",
+   "bits": [
+    "work"
+   ],
+   "first_line": "i have a 3pm meeting that could've been an email"
   }
  ],
  "callbacks": [],
