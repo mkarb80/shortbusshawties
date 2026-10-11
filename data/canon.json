@@ -36,6 +36,16 @@
     "nate_dessert"
    ],
    "first_line": "i made 12 brownies for the week"
+  },
+  {
+   "key": "seed-s07",
+   "id": "s07",
+   "pov": "Marco",
+   "bits": [
+    "marco_seattle",
+    "bad_idea"
+   ],
+   "first_line": "don't ask"
   }
  ],
  "callbacks": [],
