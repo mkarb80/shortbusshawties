@@ -1,0 +1,51 @@
+{
+ "id": "g20261012-02",
+ "format": "chat",
+ "pov": "Nate",
+ "theme": "light",
+ "time": "Tue 7:05 AM",
+ "topic": "sleep_lazy",
+ "bits": [
+  "sleep_lazy"
+ ],
+ "messages": [
+  {
+   "from": "Nate",
+   "text": "set 6 alarms this morning"
+  },
+  {
+   "from": "Nate",
+   "text": "turned off all 6"
+  },
+  {
+   "from": "Nate",
+   "text": "don't remember doing it"
+  },
+  {
+   "from": "Benny",
+   "text": "that's impressive!"
+  },
+  {
+   "from": "Nate",
+   "text": "i have a standup at 7:30"
+  },
+  {
+   "from": "Dre",
+   "text": "you're typing so you're up"
+  },
+  {
+   "from": "Nate",
+   "text": "i'm typing from bed"
+  },
+  {
+   "from": "Nate",
+   "text": "laptop is across the room"
+  },
+  {
+   "from": "Nate",
+   "text": "i'm thinking about it"
+  }
+ ],
+ "caption": "thinking about it\n\n#groupchat #sleep #relatable #funny #texts",
+ "_rejected": "length"
+}
