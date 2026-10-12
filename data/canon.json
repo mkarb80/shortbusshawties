@@ -122,6 +122,15 @@
     "work"
    ],
    "first_line": "i have a 3pm meeting that could've been an email"
+  },
+  {
+   "key": "2026-10-11-b",
+   "id": "a03",
+   "pov": "Nate",
+   "bits": [
+    "parents"
+   ],
+   "first_line": "my dad just called to say he's proud of me"
   }
  ],
  "callbacks": [],
