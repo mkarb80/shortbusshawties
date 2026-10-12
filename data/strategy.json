@@ -1,12 +1,14 @@
 {
- "updated": "2026-10-11",
- "double_down": [],
+ "updated": "2026-10-12",
+ "double_down": [
+  "dumb_decisions"
+ ],
  "avoid_more_of": [],
  "explore": [
-  "family",
   "dating",
   "money_work",
-  "sleep_lazy"
+  "sleep_lazy",
+  "festival"
  ],
- "mature_posts": 0
+ "mature_posts": 11
 }
