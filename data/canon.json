@@ -131,6 +131,15 @@
     "parents"
    ],
    "first_line": "my dad just called to say he's proud of me"
+  },
+  {
+   "key": "2026-10-12-a",
+   "id": "a04",
+   "pov": "Luis",
+   "bits": [
+    "luis_festival"
+   ],
+   "first_line": "Quick question. If someone offers you a free drink at a festival, is it rude to "
   }
  ],
  "callbacks": [],
