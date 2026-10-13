@@ -26,3 +26,15 @@ Too early to name winners or losers: family 1, lateness 1, dumb_decisions 2, des
 No pivot: the dumb_decisions double-down from yesterday has no evidence behind it, so I am ignoring it and spreading evenly. Added dating (Dre, dark) and sleep_lazy (Nate, light).
 Schedule: windows unchanged (12-14, 20-22). Reach is tiny, so the page is the bottleneck, not the content.
 Queue: 20 ready (~10 days).
+
+## 2026-10-13
+13 posts measured. Score = shares/saves/comments/likes per 100 reached.
+Best subjects: money_work (4.0, n=1), family (1.0, n=2), lateness (0.0, n=1).
+Weakest: dumb_decisions (0.0), other (0.0).
+Best POV character: Dre (4.0), Marco (0.333).
+Best posting hours (PT): 12:00 (4.0, n=1), 19:00 (0.0, n=1).
+Light vs dark: light 0.286, dark 0.667.
+Top post: "i have a 3pm meeting that could've been an email" (money_work, score 4.0).
+Pivot: doubling down on family, dumb_decisions; exploring dating, sleep_lazy.
+Schedule: posting windows unchanged (need more data).
+Queue: 18 ready (~9 days). The Claude routine at 10am writes the next 2.

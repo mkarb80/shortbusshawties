@@ -1,98 +1,139 @@
 {
- "updated": "2026-10-12T16:53:54.262243+00:00",
- "posts_total": 13,
- "posts_mature": 11,
- "global_mean": 0.0,
+ "updated": "2026-10-13T16:56:40.123722+00:00",
+ "posts_total": 15,
+ "posts_mature": 13,
+ "global_mean": 0.462,
  "reach_insights": true,
  "by_topic": {
   "family": {
+   "n": 2,
+   "mean": 1.0,
+   "shrunk": 0.731
+  },
+  "money_work": {
    "n": 1,
-   "mean": 0.0,
-   "shrunk": 0.0
+   "mean": 4.0,
+   "shrunk": 1.641
   },
   "lateness": {
    "n": 1,
    "mean": 0.0,
-   "shrunk": 0.0
+   "shrunk": 0.308
   },
   "other": {
    "n": 6,
    "mean": 0.0,
-   "shrunk": 0.0
+   "shrunk": 0.115
   },
   "dumb_decisions": {
    "n": 2,
    "mean": 0.0,
-   "shrunk": 0.0
+   "shrunk": 0.231
   },
   "dessert": {
    "n": 1,
    "mean": 0.0,
-   "shrunk": 0.0
+   "shrunk": 0.308
   }
  },
  "by_pov": {
+  "Nate": {
+   "n": 5,
+   "mean": 0.0,
+   "shrunk": 0.132
+  },
+  "Dre": {
+   "n": 1,
+   "mean": 4.0,
+   "shrunk": 1.641
+  },
   "Marco": {
    "n": 6,
-   "mean": 0.0,
-   "shrunk": 0.0
-  },
-  "Nate": {
-   "n": 4,
-   "mean": 0.0,
-   "shrunk": 0.0
+   "mean": 0.333,
+   "shrunk": 0.365
   },
   "Luis": {
    "n": 1,
    "mean": 0.0,
-   "shrunk": 0.0
+   "shrunk": 0.308
   }
  },
  "by_theme": {
   "light": {
-   "n": 6,
-   "mean": 0.0,
-   "shrunk": 0.0
+   "n": 7,
+   "mean": 0.286,
+   "shrunk": 0.325
   },
   "dark": {
-   "n": 5,
-   "mean": 0.0,
-   "shrunk": 0.0
+   "n": 6,
+   "mean": 0.667,
+   "shrunk": 0.615
   }
  },
  "by_hour": {
   "20": {
-   "n": 10,
-   "mean": 0.0,
-   "shrunk": 0.0
+   "n": 11,
+   "mean": 0.182,
+   "shrunk": 0.225
+  },
+  "12": {
+   "n": 1,
+   "mean": 4.0,
+   "shrunk": 1.641
   },
   "19": {
    "n": 1,
    "mean": 0.0,
-   "shrunk": 0.0
+   "shrunk": 0.308
   }
  },
  "by_dow": {
+  "Sun": {
+   "n": 2,
+   "mean": 2.0,
+   "shrunk": 1.231
+  },
   "Sat": {
    "n": 11,
-   "mean": 0.0,
-   "shrunk": 0.0
+   "mean": 0.182,
+   "shrunk": 0.225
   }
  },
  "top": [
   {
-   "media_id": "17904897543657893",
-   "key": "2026-10-10-b",
-   "permalink": "https://www.instagram.com/p/DeVscAunBDU/",
-   "age_h": 37.4,
+   "media_id": "18219427114350565",
+   "key": "2026-10-11-a",
+   "permalink": "https://www.instagram.com/p/DeXaEGjHfqS/",
+   "age_h": 45.5,
    "mature": true,
-   "likes": 0,
+   "likes": 2,
    "comments": 0,
    "reach": 4,
    "saved": 0,
    "shares": 0,
-   "total_interactions": 0,
-   "score": 0.0,
+   "total_interactions": 2,
+   "score": 4.0,
+   "topic": "money_work",
+   "pov": "Dre",
+   "theme": "dark",
+   "hour_pt": 12,
+   "dow": "Sun",
+   "origin": "queue",
+   "first_line": "i have a 3pm meeting that could've been an email"
+  },
+  {
+   "media_id": "17904897543657893",
+   "key": "2026-10-10-b",
+   "permalink": "https://www.instagram.com/p/DeVscAunBDU/",
+   "age_h": 61.5,
+   "mature": true,
+   "likes": 1,
+   "comments": 0,
+   "reach": 4,
+   "saved": 0,
+   "shares": 0,
+   "total_interactions": 1,
+   "score": 2.0,
    "topic": "family",
    "pov": "Marco",
    "theme": "light",
@@ -102,73 +143,10 @@
    "first_line": "my mom just texted me thinking i was her friend"
   },
   {
-   "media_id": "18102754910632828",
-   "key": "seed-s01",
-   "permalink": "https://www.instagram.com/p/DeVsMvgm7Sl/",
+   "media_id": "18114550958013477",
+   "key": "2026-10-11-b",
+   "permalink": "https://www.instagram.com/p/DeYRnWMm6br/",
    "age_h": 37.4,
-   "mature": true,
-   "likes": 0,
-   "comments": 0,
-   "reach": 4,
-   "saved": 0,
-   "shares": 0,
-   "total_interactions": 0,
-   "score": 0.0,
-   "topic": "lateness",
-   "pov": "Marco",
-   "theme": "light",
-   "hour_pt": 20,
-   "dow": "Sat",
-   "origin": "seed",
-   "first_line": "omw!!"
-  },
-  {
-   "media_id": "17911593252541509",
-   "key": "seed-s02",
-   "permalink": "https://www.instagram.com/p/DeVr06vDToY/",
-   "age_h": 37.5,
-   "mature": true,
-   "likes": 0,
-   "comments": 0,
-   "reach": 2,
-   "saved": 0,
-   "shares": 0,
-   "total_interactions": 0,
-   "score": 0.0,
-   "topic": "other",
-   "pov": "Nate",
-   "theme": "dark",
-   "hour_pt": 20,
-   "dow": "Sat",
-   "origin": "seed",
-   "first_line": "i'd survive a zombie apocalypse by just becoming a zombie early"
-  },
-  {
-   "media_id": "18104924948203832",
-   "key": "seed-s03",
-   "permalink": "https://www.instagram.com/p/DeVrc8HGyPk/",
-   "age_h": 37.6,
-   "mature": true,
-   "likes": 0,
-   "comments": 0,
-   "reach": 2,
-   "saved": 0,
-   "shares": 0,
-   "total_interactions": 0,
-   "score": 0.0,
-   "topic": "other",
-   "pov": "Nate",
-   "theme": "light",
-   "hour_pt": 20,
-   "dow": "Sat",
-   "origin": "seed",
-   "first_line": "let's hang tonight"
-  },
-  {
-   "media_id": "18102904925632429",
-   "key": "seed-s04",
-   "permalink": "https://www.instagram.com/p/DeVrEz5G0Cw/",
-   "age_h": 37.6,
    "mature": true,
    "likes": 0,
    "comments": 0,
@@ -177,42 +155,19 @@
    "shares": 0,
    "total_interactions": 0,
    "score": 0.0,
-   "topic": "other",
-   "pov": "Marco",
-   "theme": "dark",
-   "hour_pt": 20,
-   "dow": "Sat",
-   "origin": "seed",
-   "first_line": "nate was incredible last night lol"
-  }
- ],
- "bottom": [
-  {
-   "media_id": "17904897543657893",
-   "key": "2026-10-10-b",
-   "permalink": "https://www.instagram.com/p/DeVscAunBDU/",
-   "age_h": 37.4,
-   "mature": true,
-   "likes": 0,
-   "comments": 0,
-   "reach": 4,
-   "saved": 0,
-   "shares": 0,
-   "total_interactions": 0,
-   "score": 0.0,
    "topic": "family",
-   "pov": "Marco",
+   "pov": "Nate",
    "theme": "light",
    "hour_pt": 20,
-   "dow": "Sat",
+   "dow": "Sun",
    "origin": "queue",
-   "first_line": "my mom just texted me thinking i was her friend"
+   "first_line": "my dad just called to say he's proud of me"
   },
   {
    "media_id": "18102754910632828",
    "key": "seed-s01",
    "permalink": "https://www.instagram.com/p/DeVsMvgm7Sl/",
-   "age_h": 37.4,
+   "age_h": 61.5,
    "mature": true,
    "likes": 0,
    "comments": 0,
@@ -233,7 +188,72 @@
    "media_id": "17911593252541509",
    "key": "seed-s02",
    "permalink": "https://www.instagram.com/p/DeVr06vDToY/",
-   "age_h": 37.5,
+   "age_h": 61.6,
+   "mature": true,
+   "likes": 0,
+   "comments": 0,
+   "reach": 2,
+   "saved": 0,
+   "shares": 0,
+   "total_interactions": 0,
+   "score": 0.0,
+   "topic": "other",
+   "pov": "Nate",
+   "theme": "dark",
+   "hour_pt": 20,
+   "dow": "Sat",
+   "origin": "seed",
+   "first_line": "i'd survive a zombie apocalypse by just becoming a zombie early"
+  }
+ ],
+ "bottom": [
+  {
+   "media_id": "18114550958013477",
+   "key": "2026-10-11-b",
+   "permalink": "https://www.instagram.com/p/DeYRnWMm6br/",
+   "age_h": 37.4,
+   "mature": true,
+   "likes": 0,
+   "comments": 0,
+   "reach": 3,
+   "saved": 0,
+   "shares": 0,
+   "total_interactions": 0,
+   "score": 0.0,
+   "topic": "family",
+   "pov": "Nate",
+   "theme": "light",
+   "hour_pt": 20,
+   "dow": "Sun",
+   "origin": "queue",
+   "first_line": "my dad just called to say he's proud of me"
+  },
+  {
+   "media_id": "18102754910632828",
+   "key": "seed-s01",
+   "permalink": "https://www.instagram.com/p/DeVsMvgm7Sl/",
+   "age_h": 61.5,
+   "mature": true,
+   "likes": 0,
+   "comments": 0,
+   "reach": 4,
+   "saved": 0,
+   "shares": 0,
+   "total_interactions": 0,
+   "score": 0.0,
+   "topic": "lateness",
+   "pov": "Marco",
+   "theme": "light",
+   "hour_pt": 20,
+   "dow": "Sat",
+   "origin": "seed",
+   "first_line": "omw!!"
+  },
+  {
+   "media_id": "17911593252541509",
+   "key": "seed-s02",
+   "permalink": "https://www.instagram.com/p/DeVr06vDToY/",
+   "age_h": 61.6,
    "mature": true,
    "likes": 0,
    "comments": 0,
@@ -254,7 +274,7 @@
    "media_id": "18104924948203832",
    "key": "seed-s03",
    "permalink": "https://www.instagram.com/p/DeVrc8HGyPk/",
-   "age_h": 37.6,
+   "age_h": 61.6,
    "mature": true,
    "likes": 0,
    "comments": 0,
@@ -275,7 +295,7 @@
    "media_id": "18102904925632429",
    "key": "seed-s04",
    "permalink": "https://www.instagram.com/p/DeVrEz5G0Cw/",
-   "age_h": 37.6,
+   "age_h": 61.7,
    "mature": true,
    "likes": 0,
    "comments": 0,
