@@ -140,6 +140,15 @@
     "luis_festival"
    ],
    "first_line": "Quick question. If someone offers you a free drink at a festival, is it rude to "
+  },
+  {
+   "key": "2026-10-12-b",
+   "id": "a05",
+   "pov": "Marco",
+   "bits": [
+    "marco_nojob"
+   ],
+   "first_line": "my neighbor asked if i work from home"
   }
  ],
  "callbacks": [],
