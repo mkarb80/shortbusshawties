@@ -149,6 +149,15 @@
     "marco_nojob"
    ],
    "first_line": "my neighbor asked if i work from home"
+  },
+  {
+   "key": "2026-10-13-a",
+   "id": "a06",
+   "pov": "Dre",
+   "bits": [
+    "dre_chaos"
+   ],
+   "first_line": "just watched a guy trip on a flat surface"
   }
  ],
  "callbacks": [],
