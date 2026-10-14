@@ -158,6 +158,15 @@
     "dre_chaos"
    ],
    "first_line": "just watched a guy trip on a flat surface"
+  },
+  {
+   "key": "2026-10-13-b",
+   "id": "a07",
+   "pov": "Marco",
+   "bits": [
+    "marco_back"
+   ],
+   "first_line": "i got off the couch wrong and now i can't turn my head left"
   }
  ],
  "callbacks": [],
