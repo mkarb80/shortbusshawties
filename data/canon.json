@@ -167,6 +167,15 @@
     "marco_back"
    ],
    "first_line": "i got off the couch wrong and now i can't turn my head left"
+  },
+  {
+   "key": "2026-10-14-a",
+   "id": "a08",
+   "pov": "Benny",
+   "bits": [
+    "benny_positive"
+   ],
+   "first_line": "i got a 4.9 uber rating"
   }
  ],
  "callbacks": [],
