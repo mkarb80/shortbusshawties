@@ -1,9 +1,7 @@
 {
- "updated": "2026-10-13",
+ "updated": "2026-10-14",
  "target": 20,
  "unposted": [
-  "a06",
-  "a07",
   "a08",
   "a09",
   "a10",
@@ -23,8 +21,8 @@
   "g20261013-01",
   "g20261013-02"
  ],
- "unposted_count": 20,
- "need": 0,
+ "unposted_count": 18,
+ "need": 2,
  "swept": [],
  "windows": {
   "a": [

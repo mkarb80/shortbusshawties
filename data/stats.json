@@ -1,102 +1,112 @@
 {
- "updated": "2026-10-13T16:56:40.123722+00:00",
- "posts_total": 15,
- "posts_mature": 13,
- "global_mean": 0.462,
+ "updated": "2026-10-14T16:11:46.926901+00:00",
+ "posts_total": 17,
+ "posts_mature": 15,
+ "global_mean": 0.4,
  "reach_insights": true,
  "by_topic": {
+  "money_work": {
+   "n": 2,
+   "mean": 2.0,
+   "shrunk": 1.2
+  },
+  "festival": {
+   "n": 1,
+   "mean": 0.0,
+   "shrunk": 0.267
+  },
   "family": {
    "n": 2,
    "mean": 1.0,
-   "shrunk": 0.731
-  },
-  "money_work": {
-   "n": 1,
-   "mean": 4.0,
-   "shrunk": 1.641
+   "shrunk": 0.7
   },
   "lateness": {
    "n": 1,
    "mean": 0.0,
-   "shrunk": 0.308
+   "shrunk": 0.267
   },
   "other": {
    "n": 6,
    "mean": 0.0,
-   "shrunk": 0.115
+   "shrunk": 0.1
   },
   "dumb_decisions": {
    "n": 2,
    "mean": 0.0,
-   "shrunk": 0.231
+   "shrunk": 0.2
   },
   "dessert": {
    "n": 1,
    "mean": 0.0,
-   "shrunk": 0.308
+   "shrunk": 0.267
   }
  },
  "by_pov": {
+  "Marco": {
+   "n": 7,
+   "mean": 0.286,
+   "shrunk": 0.311
+  },
+  "Luis": {
+   "n": 2,
+   "mean": 0.0,
+   "shrunk": 0.2
+  },
   "Nate": {
    "n": 5,
    "mean": 0.0,
-   "shrunk": 0.132
+   "shrunk": 0.114
   },
   "Dre": {
    "n": 1,
    "mean": 4.0,
-   "shrunk": 1.641
-  },
-  "Marco": {
-   "n": 6,
-   "mean": 0.333,
-   "shrunk": 0.365
-  },
-  "Luis": {
-   "n": 1,
-   "mean": 0.0,
-   "shrunk": 0.308
+   "shrunk": 1.6
   }
  },
  "by_theme": {
+  "dark": {
+   "n": 8,
+   "mean": 0.5,
+   "shrunk": 0.48
+  },
   "light": {
    "n": 7,
    "mean": 0.286,
-   "shrunk": 0.325
-  },
-  "dark": {
-   "n": 6,
-   "mean": 0.667,
-   "shrunk": 0.615
+   "shrunk": 0.311
   }
  },
  "by_hour": {
   "20": {
-   "n": 11,
-   "mean": 0.182,
-   "shrunk": 0.225
+   "n": 12,
+   "mean": 0.167,
+   "shrunk": 0.2
   },
   "12": {
-   "n": 1,
-   "mean": 4.0,
-   "shrunk": 1.641
+   "n": 2,
+   "mean": 2.0,
+   "shrunk": 1.2
   },
   "19": {
    "n": 1,
    "mean": 0.0,
-   "shrunk": 0.308
+   "shrunk": 0.267
   }
  },
  "by_dow": {
+  "Mon": {
+   "n": 2,
+   "mean": 0.0,
+   "shrunk": 0.2
+  },
   "Sun": {
    "n": 2,
    "mean": 2.0,
-   "shrunk": 1.231
+   "shrunk": 1.2
   },
   "Sat": {
    "n": 11,
    "mean": 0.182,
-   "shrunk": 0.225
+   "shrunk": 0.215
   }
  },
  "top": [
@@ -104,7 +114,7 @@
    "media_id": "18219427114350565",
    "key": "2026-10-11-a",
    "permalink": "https://www.instagram.com/p/DeXaEGjHfqS/",
-   "age_h": 45.5,
+   "age_h": 68.7,
    "mature": true,
    "likes": 2,
    "comments": 0,
@@ -125,11 +135,11 @@
    "media_id": "17904897543657893",
    "key": "2026-10-10-b",
    "permalink": "https://www.instagram.com/p/DeVscAunBDU/",
-   "age_h": 61.5,
+   "age_h": 84.7,
    "mature": true,
    "likes": 1,
    "comments": 0,
-   "reach": 4,
+   "reach": 5,
    "saved": 0,
    "shares": 0,
    "total_interactions": 1,
@@ -143,10 +153,52 @@
    "first_line": "my mom just texted me thinking i was her friend"
   },
   {
+   "media_id": "17908262595563714",
+   "key": "2026-10-12-b",
+   "permalink": "https://www.instagram.com/p/Dea2SOlEeAr/",
+   "age_h": 36.7,
+   "mature": true,
+   "likes": 0,
+   "comments": 0,
+   "reach": 2,
+   "saved": 0,
+   "shares": 0,
+   "total_interactions": 0,
+   "score": 0.0,
+   "topic": "money_work",
+   "pov": "Marco",
+   "theme": "dark",
+   "hour_pt": 20,
+   "dow": "Mon",
+   "origin": "queue",
+   "first_line": "my neighbor asked if i work from home"
+  },
+  {
+   "media_id": "18139024894628689",
+   "key": "2026-10-12-a",
+   "permalink": "https://www.instagram.com/p/DeZ_FkPIJtC/",
+   "age_h": 44.7,
+   "mature": true,
+   "likes": 0,
+   "comments": 0,
+   "reach": 2,
+   "saved": 0,
+   "shares": 0,
+   "total_interactions": 0,
+   "score": 0.0,
+   "topic": "festival",
+   "pov": "Luis",
+   "theme": "dark",
+   "hour_pt": 12,
+   "dow": "Mon",
+   "origin": "queue",
+   "first_line": "Quick question. If someone offers you a free drink at a festival, is i"
+  },
+  {
    "media_id": "18114550958013477",
    "key": "2026-10-11-b",
    "permalink": "https://www.instagram.com/p/DeYRnWMm6br/",
-   "age_h": 37.4,
+   "age_h": 60.7,
    "mature": true,
    "likes": 0,
    "comments": 0,
@@ -162,56 +214,56 @@
    "dow": "Sun",
    "origin": "queue",
    "first_line": "my dad just called to say he's proud of me"
-  },
-  {
-   "media_id": "18102754910632828",
-   "key": "seed-s01",
-   "permalink": "https://www.instagram.com/p/DeVsMvgm7Sl/",
-   "age_h": 61.5,
-   "mature": true,
-   "likes": 0,
-   "comments": 0,
-   "reach": 4,
-   "saved": 0,
-   "shares": 0,
-   "total_interactions": 0,
-   "score": 0.0,
-   "topic": "lateness",
-   "pov": "Marco",
-   "theme": "light",
-   "hour_pt": 20,
-   "dow": "Sat",
-   "origin": "seed",
-   "first_line": "omw!!"
-  },
-  {
-   "media_id": "17911593252541509",
-   "key": "seed-s02",
-   "permalink": "https://www.instagram.com/p/DeVr06vDToY/",
-   "age_h": 61.6,
-   "mature": true,
-   "likes": 0,
-   "comments": 0,
-   "reach": 2,
-   "saved": 0,
-   "shares": 0,
-   "total_interactions": 0,
-   "score": 0.0,
-   "topic": "other",
-   "pov": "Nate",
-   "theme": "dark",
-   "hour_pt": 20,
-   "dow": "Sat",
-   "origin": "seed",
-   "first_line": "i'd survive a zombie apocalypse by just becoming a zombie early"
   }
  ],
  "bottom": [
   {
+   "media_id": "17908262595563714",
+   "key": "2026-10-12-b",
+   "permalink": "https://www.instagram.com/p/Dea2SOlEeAr/",
+   "age_h": 36.7,
+   "mature": true,
+   "likes": 0,
+   "comments": 0,
+   "reach": 2,
+   "saved": 0,
+   "shares": 0,
+   "total_interactions": 0,
+   "score": 0.0,
+   "topic": "money_work",
+   "pov": "Marco",
+   "theme": "dark",
+   "hour_pt": 20,
+   "dow": "Mon",
+   "origin": "queue",
+   "first_line": "my neighbor asked if i work from home"
+  },
+  {
+   "media_id": "18139024894628689",
+   "key": "2026-10-12-a",
+   "permalink": "https://www.instagram.com/p/DeZ_FkPIJtC/",
+   "age_h": 44.7,
+   "mature": true,
+   "likes": 0,
+   "comments": 0,
+   "reach": 2,
+   "saved": 0,
+   "shares": 0,
+   "total_interactions": 0,
+   "score": 0.0,
+   "topic": "festival",
+   "pov": "Luis",
+   "theme": "dark",
+   "hour_pt": 12,
+   "dow": "Mon",
+   "origin": "queue",
+   "first_line": "Quick question. If someone offers you a free drink at a festival, is i"
+  },
+  {
    "media_id": "18114550958013477",
    "key": "2026-10-11-b",
    "permalink": "https://www.instagram.com/p/DeYRnWMm6br/",
-   "age_h": 37.4,
+   "age_h": 60.7,
    "mature": true,
    "likes": 0,
    "comments": 0,
@@ -232,11 +284,11 @@
    "media_id": "18102754910632828",
    "key": "seed-s01",
    "permalink": "https://www.instagram.com/p/DeVsMvgm7Sl/",
-   "age_h": 61.5,
+   "age_h": 84.7,
    "mature": true,
    "likes": 0,
    "comments": 0,
-   "reach": 4,
+   "reach": 5,
    "saved": 0,
    "shares": 0,
    "total_interactions": 0,
@@ -253,11 +305,11 @@
    "media_id": "17911593252541509",
    "key": "seed-s02",
    "permalink": "https://www.instagram.com/p/DeVr06vDToY/",
-   "age_h": 61.6,
+   "age_h": 84.8,
    "mature": true,
    "likes": 0,
    "comments": 0,
-   "reach": 2,
+   "reach": 3,
    "saved": 0,
    "shares": 0,
    "total_interactions": 0,
@@ -269,48 +321,6 @@
    "dow": "Sat",
    "origin": "seed",
    "first_line": "i'd survive a zombie apocalypse by just becoming a zombie early"
-  },
-  {
-   "media_id": "18104924948203832",
-   "key": "seed-s03",
-   "permalink": "https://www.instagram.com/p/DeVrc8HGyPk/",
-   "age_h": 61.6,
-   "mature": true,
-   "likes": 0,
-   "comments": 0,
-   "reach": 2,
-   "saved": 0,
-   "shares": 0,
-   "total_interactions": 0,
-   "score": 0.0,
-   "topic": "other",
-   "pov": "Nate",
-   "theme": "light",
-   "hour_pt": 20,
-   "dow": "Sat",
-   "origin": "seed",
-   "first_line": "let's hang tonight"
-  },
-  {
-   "media_id": "18102904925632429",
-   "key": "seed-s04",
-   "permalink": "https://www.instagram.com/p/DeVrEz5G0Cw/",
-   "age_h": 61.7,
-   "mature": true,
-   "likes": 0,
-   "comments": 0,
-   "reach": 3,
-   "saved": 0,
-   "shares": 0,
-   "total_interactions": 0,
-   "score": 0.0,
-   "topic": "other",
-   "pov": "Marco",
-   "theme": "dark",
-   "hour_pt": 20,
-   "dow": "Sat",
-   "origin": "seed",
-   "first_line": "nate was incredible last night lol"
   }
  ]
 }
