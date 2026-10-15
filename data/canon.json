@@ -185,6 +185,16 @@
     "nate_dessert"
    ],
    "first_line": "my wife says i can have one dessert a week"
+  },
+  {
+   "key": "2026-10-15-a",
+   "id": "a10",
+   "pov": "Marco",
+   "bits": [
+    "dating",
+    "marco_back"
+   ],
+   "first_line": "she asked what i do for fun"
   }
  ],
  "callbacks": [],
