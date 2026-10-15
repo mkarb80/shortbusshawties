@@ -176,6 +176,15 @@
     "benny_positive"
    ],
    "first_line": "i got a 4.9 uber rating"
+  },
+  {
+   "key": "2026-10-14-b",
+   "id": "a09",
+   "pov": "Nate",
+   "bits": [
+    "nate_dessert"
+   ],
+   "first_line": "my wife says i can have one dessert a week"
   }
  ],
  "callbacks": [],
