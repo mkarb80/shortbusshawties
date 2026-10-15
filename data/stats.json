@@ -1,112 +1,127 @@
 {
- "updated": "2026-10-14T16:11:46.926901+00:00",
- "posts_total": 17,
- "posts_mature": 15,
- "global_mean": 0.4,
+ "updated": "2026-10-15T16:08:47.538439+00:00",
+ "posts_total": 19,
+ "posts_mature": 17,
+ "global_mean": 0.353,
  "reach_insights": true,
  "by_topic": {
+  "marco_body": {
+   "n": 1,
+   "mean": 0.0,
+   "shrunk": 0.235
+  },
+  "dumb_decisions": {
+   "n": 3,
+   "mean": 0.0,
+   "shrunk": 0.141
+  },
   "money_work": {
    "n": 2,
    "mean": 2.0,
-   "shrunk": 1.2
+   "shrunk": 1.176
   },
   "festival": {
    "n": 1,
    "mean": 0.0,
-   "shrunk": 0.267
+   "shrunk": 0.235
   },
   "family": {
    "n": 2,
    "mean": 1.0,
-   "shrunk": 0.7
+   "shrunk": 0.676
   },
   "lateness": {
    "n": 1,
    "mean": 0.0,
-   "shrunk": 0.267
+   "shrunk": 0.235
   },
   "other": {
    "n": 6,
    "mean": 0.0,
-   "shrunk": 0.1
-  },
-  "dumb_decisions": {
-   "n": 2,
-   "mean": 0.0,
-   "shrunk": 0.2
+   "shrunk": 0.088
   },
   "dessert": {
    "n": 1,
    "mean": 0.0,
-   "shrunk": 0.267
+   "shrunk": 0.235
   }
  },
  "by_pov": {
   "Marco": {
-   "n": 7,
-   "mean": 0.286,
-   "shrunk": 0.311
+   "n": 8,
+   "mean": 0.25,
+   "shrunk": 0.271
+  },
+  "Dre": {
+   "n": 2,
+   "mean": 2.0,
+   "shrunk": 1.176
   },
   "Luis": {
    "n": 2,
    "mean": 0.0,
-   "shrunk": 0.2
+   "shrunk": 0.176
   },
   "Nate": {
    "n": 5,
    "mean": 0.0,
-   "shrunk": 0.114
-  },
-  "Dre": {
-   "n": 1,
-   "mean": 4.0,
-   "shrunk": 1.6
+   "shrunk": 0.101
   }
  },
  "by_theme": {
+  "light": {
+   "n": 9,
+   "mean": 0.222,
+   "shrunk": 0.246
+  },
   "dark": {
    "n": 8,
    "mean": 0.5,
-   "shrunk": 0.48
-  },
-  "light": {
-   "n": 7,
-   "mean": 0.286,
-   "shrunk": 0.311
+   "shrunk": 0.471
   }
  },
  "by_hour": {
   "20": {
-   "n": 12,
-   "mean": 0.167,
-   "shrunk": 0.2
+   "n": 13,
+   "mean": 0.154,
+   "shrunk": 0.18
+  },
+  "13": {
+   "n": 1,
+   "mean": 0.0,
+   "shrunk": 0.235
   },
   "12": {
    "n": 2,
    "mean": 2.0,
-   "shrunk": 1.2
+   "shrunk": 1.176
   },
   "19": {
    "n": 1,
    "mean": 0.0,
-   "shrunk": 0.267
+   "shrunk": 0.235
   }
  },
  "by_dow": {
+  "Tue": {
+   "n": 2,
+   "mean": 0.0,
+   "shrunk": 0.176
+  },
   "Mon": {
    "n": 2,
    "mean": 0.0,
-   "shrunk": 0.2
+   "shrunk": 0.176
   },
   "Sun": {
    "n": 2,
    "mean": 2.0,
-   "shrunk": 1.2
+   "shrunk": 1.176
   },
   "Sat": {
    "n": 11,
    "mean": 0.182,
-   "shrunk": 0.215
+   "shrunk": 0.208
   }
  },
  "top": [
@@ -114,7 +129,7 @@
    "media_id": "18219427114350565",
    "key": "2026-10-11-a",
    "permalink": "https://www.instagram.com/p/DeXaEGjHfqS/",
-   "age_h": 68.7,
+   "age_h": 92.7,
    "mature": true,
    "likes": 2,
    "comments": 0,
@@ -135,7 +150,7 @@
    "media_id": "17904897543657893",
    "key": "2026-10-10-b",
    "permalink": "https://www.instagram.com/p/DeVscAunBDU/",
-   "age_h": 84.7,
+   "age_h": 108.7,
    "mature": true,
    "likes": 1,
    "comments": 0,
@@ -153,10 +168,52 @@
    "first_line": "my mom just texted me thinking i was her friend"
   },
   {
+   "media_id": "18649235320014365",
+   "key": "2026-10-13-b",
+   "permalink": "https://www.instagram.com/p/DedcHwVgOjd/",
+   "age_h": 36.5,
+   "mature": true,
+   "likes": 0,
+   "comments": 0,
+   "reach": 2,
+   "saved": 0,
+   "shares": 0,
+   "total_interactions": 0,
+   "score": 0.0,
+   "topic": "marco_body",
+   "pov": "Marco",
+   "theme": "light",
+   "hour_pt": 20,
+   "dow": "Tue",
+   "origin": "queue",
+   "first_line": "i got off the couch wrong and now i can't turn my head left"
+  },
+  {
+   "media_id": "18074225888759373",
+   "key": "2026-10-13-a",
+   "permalink": "https://www.instagram.com/p/DecsaSkAe9Q/",
+   "age_h": 43.4,
+   "mature": true,
+   "likes": 0,
+   "comments": 0,
+   "reach": 2,
+   "saved": 0,
+   "shares": 0,
+   "total_interactions": 0,
+   "score": 0.0,
+   "topic": "dumb_decisions",
+   "pov": "Dre",
+   "theme": "light",
+   "hour_pt": 13,
+   "dow": "Tue",
+   "origin": "queue",
+   "first_line": "just watched a guy trip on a flat surface"
+  },
+  {
    "media_id": "17908262595563714",
    "key": "2026-10-12-b",
    "permalink": "https://www.instagram.com/p/Dea2SOlEeAr/",
-   "age_h": 36.7,
+   "age_h": 60.6,
    "mature": true,
    "likes": 0,
    "comments": 0,
@@ -172,56 +229,56 @@
    "dow": "Mon",
    "origin": "queue",
    "first_line": "my neighbor asked if i work from home"
-  },
-  {
-   "media_id": "18139024894628689",
-   "key": "2026-10-12-a",
-   "permalink": "https://www.instagram.com/p/DeZ_FkPIJtC/",
-   "age_h": 44.7,
-   "mature": true,
-   "likes": 0,
-   "comments": 0,
-   "reach": 2,
-   "saved": 0,
-   "shares": 0,
-   "total_interactions": 0,
-   "score": 0.0,
-   "topic": "festival",
-   "pov": "Luis",
-   "theme": "dark",
-   "hour_pt": 12,
-   "dow": "Mon",
-   "origin": "queue",
-   "first_line": "Quick question. If someone offers you a free drink at a festival, is i"
-  },
-  {
-   "media_id": "18114550958013477",
-   "key": "2026-10-11-b",
-   "permalink": "https://www.instagram.com/p/DeYRnWMm6br/",
-   "age_h": 60.7,
-   "mature": true,
-   "likes": 0,
-   "comments": 0,
-   "reach": 3,
-   "saved": 0,
-   "shares": 0,
-   "total_interactions": 0,
-   "score": 0.0,
-   "topic": "family",
-   "pov": "Nate",
-   "theme": "light",
-   "hour_pt": 20,
-   "dow": "Sun",
-   "origin": "queue",
-   "first_line": "my dad just called to say he's proud of me"
   }
  ],
  "bottom": [
   {
+   "media_id": "18649235320014365",
+   "key": "2026-10-13-b",
+   "permalink": "https://www.instagram.com/p/DedcHwVgOjd/",
+   "age_h": 36.5,
+   "mature": true,
+   "likes": 0,
+   "comments": 0,
+   "reach": 2,
+   "saved": 0,
+   "shares": 0,
+   "total_interactions": 0,
+   "score": 0.0,
+   "topic": "marco_body",
+   "pov": "Marco",
+   "theme": "light",
+   "hour_pt": 20,
+   "dow": "Tue",
+   "origin": "queue",
+   "first_line": "i got off the couch wrong and now i can't turn my head left"
+  },
+  {
+   "media_id": "18074225888759373",
+   "key": "2026-10-13-a",
+   "permalink": "https://www.instagram.com/p/DecsaSkAe9Q/",
+   "age_h": 43.4,
+   "mature": true,
+   "likes": 0,
+   "comments": 0,
+   "reach": 2,
+   "saved": 0,
+   "shares": 0,
+   "total_interactions": 0,
+   "score": 0.0,
+   "topic": "dumb_decisions",
+   "pov": "Dre",
+   "theme": "light",
+   "hour_pt": 13,
+   "dow": "Tue",
+   "origin": "queue",
+   "first_line": "just watched a guy trip on a flat surface"
+  },
+  {
    "media_id": "17908262595563714",
    "key": "2026-10-12-b",
    "permalink": "https://www.instagram.com/p/Dea2SOlEeAr/",
-   "age_h": 36.7,
+   "age_h": 60.6,
    "mature": true,
    "likes": 0,
    "comments": 0,
@@ -242,7 +299,7 @@
    "media_id": "18139024894628689",
    "key": "2026-10-12-a",
    "permalink": "https://www.instagram.com/p/DeZ_FkPIJtC/",
-   "age_h": 44.7,
+   "age_h": 68.7,
    "mature": true,
    "likes": 0,
    "comments": 0,
@@ -263,7 +320,7 @@
    "media_id": "18114550958013477",
    "key": "2026-10-11-b",
    "permalink": "https://www.instagram.com/p/DeYRnWMm6br/",
-   "age_h": 60.7,
+   "age_h": 84.6,
    "mature": true,
    "likes": 0,
    "comments": 0,
@@ -279,48 +336,6 @@
    "dow": "Sun",
    "origin": "queue",
    "first_line": "my dad just called to say he's proud of me"
-  },
-  {
-   "media_id": "18102754910632828",
-   "key": "seed-s01",
-   "permalink": "https://www.instagram.com/p/DeVsMvgm7Sl/",
-   "age_h": 84.7,
-   "mature": true,
-   "likes": 0,
-   "comments": 0,
-   "reach": 5,
-   "saved": 0,
-   "shares": 0,
-   "total_interactions": 0,
-   "score": 0.0,
-   "topic": "lateness",
-   "pov": "Marco",
-   "theme": "light",
-   "hour_pt": 20,
-   "dow": "Sat",
-   "origin": "seed",
-   "first_line": "omw!!"
-  },
-  {
-   "media_id": "17911593252541509",
-   "key": "seed-s02",
-   "permalink": "https://www.instagram.com/p/DeVr06vDToY/",
-   "age_h": 84.8,
-   "mature": true,
-   "likes": 0,
-   "comments": 0,
-   "reach": 3,
-   "saved": 0,
-   "shares": 0,
-   "total_interactions": 0,
-   "score": 0.0,
-   "topic": "other",
-   "pov": "Nate",
-   "theme": "dark",
-   "hour_pt": 20,
-   "dow": "Sat",
-   "origin": "seed",
-   "first_line": "i'd survive a zombie apocalypse by just becoming a zombie early"
   }
  ]
 }
