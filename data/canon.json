@@ -204,6 +204,15 @@
     "nate_sleepy"
    ],
    "first_line": "i fell asleep during the movie again"
+  },
+  {
+   "key": "2026-10-16-a",
+   "id": "g20261010-02",
+   "pov": "Benny",
+   "bits": [
+    "benny_eta"
+   ],
+   "first_line": "heading out now"
   }
  ],
  "callbacks": [],
