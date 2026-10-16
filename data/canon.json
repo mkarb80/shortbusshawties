@@ -195,6 +195,15 @@
     "marco_back"
    ],
    "first_line": "she asked what i do for fun"
+  },
+  {
+   "key": "2026-10-15-b",
+   "id": "g20261010-01",
+   "pov": "Nate",
+   "bits": [
+    "nate_sleepy"
+   ],
+   "first_line": "i fell asleep during the movie again"
   }
  ],
  "callbacks": [],
