@@ -95,3 +95,10 @@ Top post: "i have a 3pm meeting that could've been an email" (money_work, score 
 Pivot: doubling down on money_work, family, dessert; exploring dating, sleep_lazy.
 Schedule: posting windows unchanged (need more data).
 Queue: 18 ready (~9 days). The Claude routine at 10am writes the next 2.
+
+## 2026-10-16 (routine)
+19 mature posts, reach 3-5 each, almost no engagement: still too early for real signal.
+money_work 2.0 (n=2) and family 1.0 (n=2) lead; everything else 0.0. Dre 2.0 (n=2), Marco 0.25 (n=8), Nate 0 (n=6). Dark 0.444 (n=9) vs light 0.2 (n=10). 12:00 hour 1.333 (n=3) vs 20:00 0.143 (n=14).
+No pivot; dessert/dumb_decisions at 0 but samples of 2-3 are noise. Added money_work (Dre, light) and marriage (Luis, dark, untested).
+Schedule unchanged (12-14, 20-22). Reach is the bottleneck, not content.
+Queue: 20 ready (~10 days).
