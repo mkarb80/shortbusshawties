@@ -1,127 +1,142 @@
 {
- "updated": "2026-10-15T16:08:47.538439+00:00",
- "posts_total": 19,
- "posts_mature": 17,
- "global_mean": 0.353,
+ "updated": "2026-10-16T16:08:20.095652+00:00",
+ "posts_total": 21,
+ "posts_mature": 19,
+ "global_mean": 0.316,
  "reach_insights": true,
  "by_topic": {
+  "dessert": {
+   "n": 2,
+   "mean": 0.0,
+   "shrunk": 0.158
+  },
+  "wholesome_friends": {
+   "n": 1,
+   "mean": 0.0,
+   "shrunk": 0.211
+  },
   "marco_body": {
    "n": 1,
    "mean": 0.0,
-   "shrunk": 0.235
+   "shrunk": 0.211
   },
   "dumb_decisions": {
    "n": 3,
    "mean": 0.0,
-   "shrunk": 0.141
+   "shrunk": 0.126
   },
   "money_work": {
    "n": 2,
    "mean": 2.0,
-   "shrunk": 1.176
+   "shrunk": 1.158
   },
   "festival": {
    "n": 1,
    "mean": 0.0,
-   "shrunk": 0.235
+   "shrunk": 0.211
   },
   "family": {
    "n": 2,
    "mean": 1.0,
-   "shrunk": 0.676
+   "shrunk": 0.658
   },
   "lateness": {
    "n": 1,
    "mean": 0.0,
-   "shrunk": 0.235
+   "shrunk": 0.211
   },
   "other": {
    "n": 6,
    "mean": 0.0,
-   "shrunk": 0.088
-  },
-  "dessert": {
-   "n": 1,
-   "mean": 0.0,
-   "shrunk": 0.235
+   "shrunk": 0.079
   }
  },
  "by_pov": {
+  "Nate": {
+   "n": 6,
+   "mean": 0.0,
+   "shrunk": 0.079
+  },
+  "Benny": {
+   "n": 1,
+   "mean": 0.0,
+   "shrunk": 0.211
+  },
   "Marco": {
    "n": 8,
    "mean": 0.25,
-   "shrunk": 0.271
+   "shrunk": 0.263
   },
   "Dre": {
    "n": 2,
    "mean": 2.0,
-   "shrunk": 1.176
+   "shrunk": 1.158
   },
   "Luis": {
    "n": 2,
    "mean": 0.0,
-   "shrunk": 0.176
-  },
-  "Nate": {
-   "n": 5,
-   "mean": 0.0,
-   "shrunk": 0.101
+   "shrunk": 0.158
   }
  },
  "by_theme": {
   "light": {
-   "n": 9,
-   "mean": 0.222,
-   "shrunk": 0.246
+   "n": 10,
+   "mean": 0.2,
+   "shrunk": 0.219
   },
   "dark": {
-   "n": 8,
-   "mean": 0.5,
-   "shrunk": 0.471
+   "n": 9,
+   "mean": 0.444,
+   "shrunk": 0.421
   }
  },
  "by_hour": {
   "20": {
-   "n": 13,
-   "mean": 0.154,
-   "shrunk": 0.18
+   "n": 14,
+   "mean": 0.143,
+   "shrunk": 0.164
+  },
+  "12": {
+   "n": 3,
+   "mean": 1.333,
+   "shrunk": 0.926
   },
   "13": {
    "n": 1,
    "mean": 0.0,
-   "shrunk": 0.235
-  },
-  "12": {
-   "n": 2,
-   "mean": 2.0,
-   "shrunk": 1.176
+   "shrunk": 0.211
   },
   "19": {
    "n": 1,
    "mean": 0.0,
-   "shrunk": 0.235
+   "shrunk": 0.211
   }
  },
  "by_dow": {
+  "Wed": {
+   "n": 2,
+   "mean": 0.0,
+   "shrunk": 0.158
+  },
   "Tue": {
    "n": 2,
    "mean": 0.0,
-   "shrunk": 0.176
+   "shrunk": 0.158
   },
   "Mon": {
    "n": 2,
    "mean": 0.0,
-   "shrunk": 0.176
+   "shrunk": 0.158
   },
   "Sun": {
    "n": 2,
    "mean": 2.0,
-   "shrunk": 1.176
+   "shrunk": 1.158
   },
   "Sat": {
    "n": 11,
    "mean": 0.182,
-   "shrunk": 0.208
+   "shrunk": 0.202
   }
  },
  "top": [
@@ -129,7 +144,7 @@
    "media_id": "18219427114350565",
    "key": "2026-10-11-a",
    "permalink": "https://www.instagram.com/p/DeXaEGjHfqS/",
-   "age_h": 92.7,
+   "age_h": 116.7,
    "mature": true,
    "likes": 2,
    "comments": 0,
@@ -150,7 +165,7 @@
    "media_id": "17904897543657893",
    "key": "2026-10-10-b",
    "permalink": "https://www.instagram.com/p/DeVscAunBDU/",
-   "age_h": 108.7,
+   "age_h": 132.7,
    "mature": true,
    "likes": 1,
    "comments": 0,
@@ -168,159 +183,10 @@
    "first_line": "my mom just texted me thinking i was her friend"
   },
   {
-   "media_id": "18649235320014365",
-   "key": "2026-10-13-b",
-   "permalink": "https://www.instagram.com/p/DedcHwVgOjd/",
+   "media_id": "18109363493193681",
+   "key": "2026-10-14-b",
+   "permalink": "https://www.instagram.com/p/DegA6GVFM5H/",
    "age_h": 36.5,
-   "mature": true,
-   "likes": 0,
-   "comments": 0,
-   "reach": 2,
-   "saved": 0,
-   "shares": 0,
-   "total_interactions": 0,
-   "score": 0.0,
-   "topic": "marco_body",
-   "pov": "Marco",
-   "theme": "light",
-   "hour_pt": 20,
-   "dow": "Tue",
-   "origin": "queue",
-   "first_line": "i got off the couch wrong and now i can't turn my head left"
-  },
-  {
-   "media_id": "18074225888759373",
-   "key": "2026-10-13-a",
-   "permalink": "https://www.instagram.com/p/DecsaSkAe9Q/",
-   "age_h": 43.4,
-   "mature": true,
-   "likes": 0,
-   "comments": 0,
-   "reach": 2,
-   "saved": 0,
-   "shares": 0,
-   "total_interactions": 0,
-   "score": 0.0,
-   "topic": "dumb_decisions",
-   "pov": "Dre",
-   "theme": "light",
-   "hour_pt": 13,
-   "dow": "Tue",
-   "origin": "queue",
-   "first_line": "just watched a guy trip on a flat surface"
-  },
-  {
-   "media_id": "17908262595563714",
-   "key": "2026-10-12-b",
-   "permalink": "https://www.instagram.com/p/Dea2SOlEeAr/",
-   "age_h": 60.6,
-   "mature": true,
-   "likes": 0,
-   "comments": 0,
-   "reach": 2,
-   "saved": 0,
-   "shares": 0,
-   "total_interactions": 0,
-   "score": 0.0,
-   "topic": "money_work",
-   "pov": "Marco",
-   "theme": "dark",
-   "hour_pt": 20,
-   "dow": "Mon",
-   "origin": "queue",
-   "first_line": "my neighbor asked if i work from home"
-  }
- ],
- "bottom": [
-  {
-   "media_id": "18649235320014365",
-   "key": "2026-10-13-b",
-   "permalink": "https://www.instagram.com/p/DedcHwVgOjd/",
-   "age_h": 36.5,
-   "mature": true,
-   "likes": 0,
-   "comments": 0,
-   "reach": 2,
-   "saved": 0,
-   "shares": 0,
-   "total_interactions": 0,
-   "score": 0.0,
-   "topic": "marco_body",
-   "pov": "Marco",
-   "theme": "light",
-   "hour_pt": 20,
-   "dow": "Tue",
-   "origin": "queue",
-   "first_line": "i got off the couch wrong and now i can't turn my head left"
-  },
-  {
-   "media_id": "18074225888759373",
-   "key": "2026-10-13-a",
-   "permalink": "https://www.instagram.com/p/DecsaSkAe9Q/",
-   "age_h": 43.4,
-   "mature": true,
-   "likes": 0,
-   "comments": 0,
-   "reach": 2,
-   "saved": 0,
-   "shares": 0,
-   "total_interactions": 0,
-   "score": 0.0,
-   "topic": "dumb_decisions",
-   "pov": "Dre",
-   "theme": "light",
-   "hour_pt": 13,
-   "dow": "Tue",
-   "origin": "queue",
-   "first_line": "just watched a guy trip on a flat surface"
-  },
-  {
-   "media_id": "17908262595563714",
-   "key": "2026-10-12-b",
-   "permalink": "https://www.instagram.com/p/Dea2SOlEeAr/",
-   "age_h": 60.6,
-   "mature": true,
-   "likes": 0,
-   "comments": 0,
-   "reach": 2,
-   "saved": 0,
-   "shares": 0,
-   "total_interactions": 0,
-   "score": 0.0,
-   "topic": "money_work",
-   "pov": "Marco",
-   "theme": "dark",
-   "hour_pt": 20,
-   "dow": "Mon",
-   "origin": "queue",
-   "first_line": "my neighbor asked if i work from home"
-  },
-  {
-   "media_id": "18139024894628689",
-   "key": "2026-10-12-a",
-   "permalink": "https://www.instagram.com/p/DeZ_FkPIJtC/",
-   "age_h": 68.7,
-   "mature": true,
-   "likes": 0,
-   "comments": 0,
-   "reach": 2,
-   "saved": 0,
-   "shares": 0,
-   "total_interactions": 0,
-   "score": 0.0,
-   "topic": "festival",
-   "pov": "Luis",
-   "theme": "dark",
-   "hour_pt": 12,
-   "dow": "Mon",
-   "origin": "queue",
-   "first_line": "Quick question. If someone offers you a free drink at a festival, is i"
-  },
-  {
-   "media_id": "18114550958013477",
-   "key": "2026-10-11-b",
-   "permalink": "https://www.instagram.com/p/DeYRnWMm6br/",
-   "age_h": 84.6,
    "mature": true,
    "likes": 0,
    "comments": 0,
@@ -329,13 +195,162 @@
    "shares": 0,
    "total_interactions": 0,
    "score": 0.0,
-   "topic": "family",
+   "topic": "dessert",
    "pov": "Nate",
    "theme": "light",
    "hour_pt": 20,
-   "dow": "Sun",
+   "dow": "Wed",
    "origin": "queue",
-   "first_line": "my dad just called to say he's proud of me"
+   "first_line": "my wife says i can have one dessert a week"
+  },
+  {
+   "media_id": "17906360133579277",
+   "key": "2026-10-14-a",
+   "permalink": "https://www.instagram.com/p/DefKIyQiUek/",
+   "age_h": 44.4,
+   "mature": true,
+   "likes": 0,
+   "comments": 0,
+   "reach": 3,
+   "saved": 0,
+   "shares": 0,
+   "total_interactions": 0,
+   "score": 0.0,
+   "topic": "wholesome_friends",
+   "pov": "Benny",
+   "theme": "dark",
+   "hour_pt": 12,
+   "dow": "Wed",
+   "origin": "queue",
+   "first_line": "i got a 4.9 uber rating"
+  },
+  {
+   "media_id": "18649235320014365",
+   "key": "2026-10-13-b",
+   "permalink": "https://www.instagram.com/p/DedcHwVgOjd/",
+   "age_h": 60.5,
+   "mature": true,
+   "likes": 0,
+   "comments": 0,
+   "reach": 3,
+   "saved": 0,
+   "shares": 0,
+   "total_interactions": 0,
+   "score": 0.0,
+   "topic": "marco_body",
+   "pov": "Marco",
+   "theme": "light",
+   "hour_pt": 20,
+   "dow": "Tue",
+   "origin": "queue",
+   "first_line": "i got off the couch wrong and now i can't turn my head left"
+  }
+ ],
+ "bottom": [
+  {
+   "media_id": "18109363493193681",
+   "key": "2026-10-14-b",
+   "permalink": "https://www.instagram.com/p/DegA6GVFM5H/",
+   "age_h": 36.5,
+   "mature": true,
+   "likes": 0,
+   "comments": 0,
+   "reach": 3,
+   "saved": 0,
+   "shares": 0,
+   "total_interactions": 0,
+   "score": 0.0,
+   "topic": "dessert",
+   "pov": "Nate",
+   "theme": "light",
+   "hour_pt": 20,
+   "dow": "Wed",
+   "origin": "queue",
+   "first_line": "my wife says i can have one dessert a week"
+  },
+  {
+   "media_id": "17906360133579277",
+   "key": "2026-10-14-a",
+   "permalink": "https://www.instagram.com/p/DefKIyQiUek/",
+   "age_h": 44.4,
+   "mature": true,
+   "likes": 0,
+   "comments": 0,
+   "reach": 3,
+   "saved": 0,
+   "shares": 0,
+   "total_interactions": 0,
+   "score": 0.0,
+   "topic": "wholesome_friends",
+   "pov": "Benny",
+   "theme": "dark",
+   "hour_pt": 12,
+   "dow": "Wed",
+   "origin": "queue",
+   "first_line": "i got a 4.9 uber rating"
+  },
+  {
+   "media_id": "18649235320014365",
+   "key": "2026-10-13-b",
+   "permalink": "https://www.instagram.com/p/DedcHwVgOjd/",
+   "age_h": 60.5,
+   "mature": true,
+   "likes": 0,
+   "comments": 0,
+   "reach": 3,
+   "saved": 0,
+   "shares": 0,
+   "total_interactions": 0,
+   "score": 0.0,
+   "topic": "marco_body",
+   "pov": "Marco",
+   "theme": "light",
+   "hour_pt": 20,
+   "dow": "Tue",
+   "origin": "queue",
+   "first_line": "i got off the couch wrong and now i can't turn my head left"
+  },
+  {
+   "media_id": "18074225888759373",
+   "key": "2026-10-13-a",
+   "permalink": "https://www.instagram.com/p/DecsaSkAe9Q/",
+   "age_h": 67.4,
+   "mature": true,
+   "likes": 0,
+   "comments": 0,
+   "reach": 3,
+   "saved": 0,
+   "shares": 0,
+   "total_interactions": 0,
+   "score": 0.0,
+   "topic": "dumb_decisions",
+   "pov": "Dre",
+   "theme": "light",
+   "hour_pt": 13,
+   "dow": "Tue",
+   "origin": "queue",
+   "first_line": "just watched a guy trip on a flat surface"
+  },
+  {
+   "media_id": "17908262595563714",
+   "key": "2026-10-12-b",
+   "permalink": "https://www.instagram.com/p/Dea2SOlEeAr/",
+   "age_h": 84.6,
+   "mature": true,
+   "likes": 0,
+   "comments": 0,
+   "reach": 2,
+   "saved": 0,
+   "shares": 0,
+   "total_interactions": 0,
+   "score": 0.0,
+   "topic": "money_work",
+   "pov": "Marco",
+   "theme": "dark",
+   "hour_pt": 20,
+   "dow": "Mon",
+   "origin": "queue",
+   "first_line": "my neighbor asked if i work from home"
   }
  ]
 }
