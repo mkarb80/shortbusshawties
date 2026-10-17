@@ -213,6 +213,15 @@
     "benny_eta"
    ],
    "first_line": "heading out now"
+  },
+  {
+   "key": "2026-10-16-b",
+   "id": "g20261010-03",
+   "pov": "Nate",
+   "bits": [
+    "nate_sleepy"
+   ],
+   "first_line": "went to bed at 8:30"
   }
  ],
  "callbacks": [],
