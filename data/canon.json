@@ -222,6 +222,15 @@
     "nate_sleepy"
    ],
    "first_line": "went to bed at 8:30"
+  },
+  {
+   "key": "2026-10-17-a",
+   "id": "g20261010-04",
+   "pov": "Benny",
+   "bits": [
+    "benny_social"
+   ],
+   "first_line": "just bumped into my old landlord at a chili's in boise"
   }
  ],
  "callbacks": [],
