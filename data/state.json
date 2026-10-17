@@ -1,9 +1,7 @@
 {
- "updated": "2026-10-16",
+ "updated": "2026-10-17",
  "target": 20,
  "unposted": [
-  "g20261010-02",
-  "g20261010-03",
   "g20261010-04",
   "g20261010-05",
   "g20261010-06",
@@ -21,7 +19,9 @@
   "g20261015-01",
   "g20261015-02",
   "g20261016-01",
-  "g20261016-02"
+  "g20261016-02",
+  "g20261017-01",
+  "g20261017-02"
  ],
  "unposted_count": 20,
  "need": 0,
@@ -76,6 +76,8 @@
   "my mom just texted me thinking i was her friend",
   "my mom keeps sending me articles about 'signs of burnout'",
   "my neighbor asked if i work from home",
+  "my phone says my screen time is up 30% this week",
+  "my sister asked me to watch her dog for the weekend",
   "my wife asked me to stop narrating while i cook",
   "my wife says i can have one dessert a week",
   "nate was incredible last night lol",
