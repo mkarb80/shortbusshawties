@@ -240,6 +240,15 @@
     "luis_family"
    ],
    "first_line": "My grandfather asked if I'm still doing the 'medicine thing'."
+  },
+  {
+   "key": "2026-10-18-a",
+   "id": "g20261010-06",
+   "pov": "Dre",
+   "bits": [
+    "dre_chaos"
+   ],
+   "first_line": "my dentist told me to 'consider flossing'"
   }
  ],
  "callbacks": [],
