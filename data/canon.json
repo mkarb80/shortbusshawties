@@ -231,6 +231,15 @@
     "benny_social"
    ],
    "first_line": "just bumped into my old landlord at a chili's in boise"
+  },
+  {
+   "key": "2026-10-17-b",
+   "id": "g20261010-05",
+   "pov": "Luis",
+   "bits": [
+    "luis_family"
+   ],
+   "first_line": "My grandfather asked if I'm still doing the 'medicine thing'."
   }
  ],
  "callbacks": [],
