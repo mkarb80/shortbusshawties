@@ -1,19 +1,17 @@
 {
- "updated": "2026-10-16",
+ "updated": "2026-10-19",
  "double_down": [
   "money_work",
   "family",
-  "dessert"
+  "wholesome_friends"
  ],
  "avoid_more_of": [
   "dumb_decisions",
-  "dessert"
+  "wholesome_friends"
  ],
  "explore": [
-  "dating",
-  "sleep_lazy",
   "marriage",
   "dark_life"
  ],
- "mature_posts": 19
+ "mature_posts": 25
 }
