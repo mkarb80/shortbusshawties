@@ -1,6 +1,4 @@
 # Learnings 2026-10-22
 
-No post is 24h old with data yet (0 live), so nothing is changing today.
-Pivot: not enough proof yet, spreading across topics and testing family, dating, money_work.
-Schedule: posting windows unchanged (need more data).
-Queue: +0 new posts, 20 ready (~10 days).
+No post has measured data yet (stats show 0 posts, reach_insights off): too early for signal, no pivot.
+Wrote 0 posts (need 0). Schedule unchanged (12-14, 20-22). Queue: 20 ready (~10 days).
