@@ -1,4 +1,4 @@
-# Learnings 2026-11-01
+# Learnings 2026-11-02
 
 No post is 24h old with data yet (0 live), so nothing is changing today.
 Pivot: not enough proof yet, spreading across topics and testing family, dating, money_work.
