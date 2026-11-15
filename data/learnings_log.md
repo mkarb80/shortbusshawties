@@ -370,3 +370,9 @@ BLOCKER (day 5+): posting still fails with Instagram OAuth error 190 ("session h
 No post has measured data yet (stats show 0 posts, reach_insights off): too early for signal, no pivot.
 Wrote 0 posts (need 0). Schedule unchanged (12-14, 20-22). Queue: 20 ready (~10 days, validated).
 BLOCKER (day 6+): posting still fails with Instagram OAuth error 190 ("session has been invalidated"), last seen run 43650751950 on Nov 14. IG_ACCESS_TOKEN secret must be regenerated; nothing has posted since Oct 10 (oldest unposted g20261010-10).
+
+## 2026-11-15
+No post is 24h old with data yet (0 live), so nothing is changing today.
+Pivot: not enough proof yet, spreading across topics and testing family, dating, money_work.
+Schedule: posting windows unchanged (need more data).
+Queue: +0 new posts, 20 ready (~10 days).
